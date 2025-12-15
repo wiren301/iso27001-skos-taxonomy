@@ -1,0 +1,1574 @@
+{
+  "nodes": [
+    {
+      "id": "3.1",
+      "label": "access control",
+      "definition": "means to ensure that access to assets is authorized and restricted based on business and security requirements (3.56)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.1",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.56"
+      ]
+    },
+    {
+      "id": "3.2",
+      "label": "attack",
+      "definition": "attempt to destroy, expose, alter, disable, steal or gain unauthorized access to or make unauthorized use of an asset",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.2",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.3",
+      "label": "audit",
+      "definition": "systematic, independent and documented process (3.54) for obtaining audit evidence and evaluating it objectively to determine the extent to which the audit criteria are fulfilled",
+      "notes": [
+        "An audit can be an internal audit (first party) or an external audit (second party or third party), and it can be a combined audit (combining two or more disciplines). | An internal audit is conducted by the organization itself, or by an external party on its behalf. | \"Audit evidence\" and \"audit criteria\" are defined in ISO 19011."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.3",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.4"
+      ]
+    },
+    {
+      "id": "3.4",
+      "label": "audit scope",
+      "definition": "extent and boundaries of an audit (3.3)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.4",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.3"
+      ]
+    },
+    {
+      "id": "3.5",
+      "label": "authentication",
+      "definition": "provision of assurance that a claimed characteristic of an entity is correct",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.5",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.6",
+      "label": "authenticity",
+      "definition": "property that an entity is what it claims to be",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.6",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.7",
+      "label": "availability",
+      "definition": "property of being accessible and usable on demand by an authorized entity",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.7",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.28"
+      ]
+    },
+    {
+      "id": "3.8",
+      "label": "base measure",
+      "definition": "measure (3.42) defined in terms of an attribute and the method for quantifying it",
+      "notes": [
+        "A base measure is functionally independent of other measures."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.8",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.42",
+        "3.18",
+        "3.44"
+      ]
+    },
+    {
+      "id": "3.9",
+      "label": "competence",
+      "definition": "ability to apply knowledge and skills to achieve intended results",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.9",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.10",
+      "label": "confidentiality",
+      "definition": "property that information is not made available or disclosed to unauthorized individuals, entities, or processes (3.54)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.10",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.28"
+      ]
+    },
+    {
+      "id": "3.11",
+      "label": "conformity",
+      "definition": "fulfilment of a requirement (3.56)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.11",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.56"
+      ]
+    },
+    {
+      "id": "3.12",
+      "label": "consequence",
+      "definition": "outcome of an event (3.21) affecting objectives (3.49)",
+      "notes": [
+        "An event can lead to a range of consequences. | A consequence can be certain or uncertain and, in the context of information security, is usually negative. | Consequences can be expressed qualitatively or quantitatively. | Initial consequences can escalate through knock-on effects."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.12",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.49",
+        "3.39",
+        "3.21"
+      ]
+    },
+    {
+      "id": "3.13",
+      "label": "continual improvement",
+      "definition": "recurring activity to enhance performance (3.52)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.13",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.52"
+      ]
+    },
+    {
+      "id": "3.14",
+      "label": "control",
+      "definition": "measure that is modifying risk (3.61)",
+      "notes": [
+        "Controls include any process (3.54), policy (3.53), device, practice, or other actions which modify risk (3.61). | It is possible that controls not always exert the intended or assumed modifying effect."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.14",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61",
+        "3.77",
+        "3.30",
+        "3.15"
+      ]
+    },
+    {
+      "id": "3.15",
+      "label": "control objective",
+      "definition": "statement describing what is to be achieved as a result of implementing controls (3.14)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.15",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.14"
+      ]
+    },
+    {
+      "id": "3.16",
+      "label": "correction",
+      "definition": "action to eliminate a detected nonconformity (3.47)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.16",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.47"
+      ]
+    },
+    {
+      "id": "3.17",
+      "label": "corrective action",
+      "definition": "action to eliminate the cause of a nonconformity (3.47) and to prevent recurrence",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.17",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.47"
+      ]
+    },
+    {
+      "id": "3.18",
+      "label": "derived measure",
+      "definition": "measure (3.42) that is defined as a function of two or more values of base measures (3.8)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.18",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.42",
+        "3.8"
+      ]
+    },
+    {
+      "id": "3.19",
+      "label": "documented information",
+      "definition": "information required to be controlled and maintained by an organization (3.50) and the medium on which it is contained",
+      "notes": [
+        "Documented information can be in any format and media and from any source. | Documented information can refer to: \u2014 the management system (3.41), including related processes (3.54); \u2014 information created in order for the organization (3.50) to operate (documentation); \u2014 evidence of results achieved (records)."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.19",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50"
+      ]
+    },
+    {
+      "id": "3.20",
+      "label": "effectiveness",
+      "definition": "extent to which planned activities are realized and planned results achieved",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.20",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.58"
+      ]
+    },
+    {
+      "id": "3.21",
+      "label": "event",
+      "definition": "occurrence or change of a particular set of circumstances",
+      "notes": [
+        "An event can be one or more occurrences, and can have several causes. | An event can consist of something not happening. | An event can sometimes be referred to as an \"incident\" or \"accident\"."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.21",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.12",
+        "3.48"
+      ]
+    },
+    {
+      "id": "3.22",
+      "label": "external context",
+      "definition": "external environment in which the organization seeks to achieve its objectives (3.49)",
+      "notes": [
+        "External context can include the following: \u2014 the cultural, social, political, legal, regulatory, financial, technological, economic, natural and competitive environment, whether international, national, regional or local; \u2014 key drivers and trends having impact on the objectives of the organization (3.50); \u2014 relationships with, and perceptions and values of, external stakeholders (3.37)."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.22",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.49"
+      ]
+    },
+    {
+      "id": "3.23",
+      "label": "governance of information security",
+      "definition": "system by which an organization's (3.50) information security (3.28) activities are directed and controlled",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.23",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.28"
+      ]
+    },
+    {
+      "id": "3.24",
+      "label": "governing body",
+      "definition": "person or group of people who are accountable for the performance (3.52) and conformity of the organization (3.50)",
+      "notes": [
+        "The governing body can, in some jurisdictions, be a board of directors."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.24",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.52",
+        "3.50"
+      ]
+    },
+    {
+      "id": "3.25",
+      "label": "indicator",
+      "definition": "measure (3.42) that provides an estimate or evaluation",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.25",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.42"
+      ]
+    },
+    {
+      "id": "3.26",
+      "label": "information need",
+      "definition": "insight necessary to manage objectives (3.49), goals, risks and problems",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.26",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.49"
+      ]
+    },
+    {
+      "id": "3.27",
+      "label": "information processing facilities",
+      "definition": "any information processing system, service or infrastructure, or the physical location housing it",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.27",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.28",
+      "label": "information security",
+      "definition": "preservation of confidentiality (3.10), integrity (3.36) and availability (3.7) of information",
+      "notes": [
+        "In addition, other properties, such as authenticity (3.6), accountability, non-repudiation (3.48), and reliability (3.55) can also be involved."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.28",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": true,
+      "related": [
+        "3.31",
+        "3.30",
+        "3.10",
+        "3.23",
+        "3.29",
+        "3.36",
+        "3.7"
+      ]
+    },
+    {
+      "id": "3.29",
+      "label": "information security continuity",
+      "definition": "processes (3.54) and procedures for ensuring continued information security (3.28) operations",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.29",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.28"
+      ]
+    },
+    {
+      "id": "3.30",
+      "label": "information security event",
+      "definition": "identified occurrence of a system, service or network state indicating a possible breach of information security (3.28) policy (3.53) or failure of controls (3.14), or a previously unknown situation that can be security relevant",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.30",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.14",
+        "3.28",
+        "3.31",
+        "3.53"
+      ]
+    },
+    {
+      "id": "3.31",
+      "label": "information security incident",
+      "definition": "single or a series of unwanted or unexpected information security events (3.30) that have a significant probability of compromising business operations and threatening information security (3.28)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.31",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.28",
+        "3.30",
+        "3.32"
+      ]
+    },
+    {
+      "id": "3.32",
+      "label": "information security incident management",
+      "definition": "set of processes (3.54) for detecting, reporting, assessing, responding to, dealing with, and learning from information security incidents (3.31)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.32",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.31"
+      ]
+    },
+    {
+      "id": "3.33",
+      "label": "information security management system (ISMS) professional",
+      "definition": "person who establishes, implements, maintains and continuously improves one or more information security management system processes (3.54)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.33",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54"
+      ]
+    },
+    {
+      "id": "3.34",
+      "label": "information sharing community",
+      "definition": "group of organizations (3.50) that agree to share information",
+      "notes": [
+        "An organization can be an individual."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.34",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.76"
+      ]
+    },
+    {
+      "id": "3.35",
+      "label": "information system",
+      "definition": "set of applications, services, information technology assets, or other information-handling components",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.35",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.36",
+      "label": "integrity",
+      "definition": "property of accuracy and completeness",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.36",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.28"
+      ]
+    },
+    {
+      "id": "3.37",
+      "label": "interested party (preferred term) / stakeholder (admitted term)",
+      "definition": "person or organization (3.50) that can affect, be affected by, or perceive itself to be affected by a decision or activity",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.37",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.65"
+      ]
+    },
+    {
+      "id": "3.38",
+      "label": "internal context",
+      "definition": "internal environment in which the organization (3.50) seeks to achieve its objectives",
+      "notes": [
+        "Internal context can include: \u2014 governance, organizational structure, roles and accountabilities; \u2014 policies (3.53), objectives (3.49), and the strategies that are in place to achieve them; \u2014 the capabilities, understood in terms of resources and knowledge (e.g. capital, time, people, processes (3.54), systems and technologies); \u2014 information systems (3.35), information flows and decision-making processes (both formal and informal); \u2014 relationships with, and perceptions and values of, internal stakeholders (3.37); \u2014 the organization's culture; \u2014 standards, guidelines and models adopted by the organization; \u2014 form and extent of contractual relationships."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.38",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50"
+      ]
+    },
+    {
+      "id": "3.39",
+      "label": "level of risk",
+      "definition": "magnitude of a risk (3.61) expressed in terms of the combination of consequences (3.12) and their likelihood (3.40)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.39",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61",
+        "3.12",
+        "3.40",
+        "3.63"
+      ]
+    },
+    {
+      "id": "3.40",
+      "label": "likelihood",
+      "definition": "chance of something happening",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.40",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.39"
+      ]
+    },
+    {
+      "id": "3.41",
+      "label": "management system",
+      "definition": "set of interrelated or interacting elements of an organization (3.50) to establish policies (3.53) and objectives (3.49) and processes (3.54) to achieve those objectives",
+      "notes": [
+        "A management system can address a single discipline or several disciplines. | The system elements include the organization's structure, roles and responsibilities, planning and operation. | The scope of a management system may include the whole of the organization, specific and identified functions of the organization, specific and identified sections of the organization, or one or more functions across a group of organizations."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.41",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": true,
+      "related": [
+        "3.50",
+        "3.49",
+        "3.54",
+        "3.53"
+      ]
+    },
+    {
+      "id": "3.42",
+      "label": "measure",
+      "definition": "variable to which a value is assigned as the result of measurement (3.43)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.42",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.8",
+        "3.18",
+        "3.25",
+        "3.43"
+      ]
+    },
+    {
+      "id": "3.43",
+      "label": "measurement",
+      "definition": "process (3.54) to determine a value",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.43",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.42",
+        "3.54"
+      ]
+    },
+    {
+      "id": "3.44",
+      "label": "measurement function",
+      "definition": "algorithm or calculation performed to combine two or more base measures (3.8)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.44",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.8"
+      ]
+    },
+    {
+      "id": "3.45",
+      "label": "measurement method",
+      "definition": "logical sequence of operations, described generically, used in quantifying an attribute with respect to a specified scale",
+      "notes": [
+        "The type of measurement method depends on the nature of the operations used to quantify an attribute (3.4). Two types can be distinguished: \u2014 subjective: quantification involving human judgment; and \u2014 objective: quantification based on numerical rules."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.45",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.46",
+      "label": "monitoring",
+      "definition": "determining the status of a system, a process (3.54) or an activity",
+      "notes": [
+        "To determine the status, there may be a need to check, supervise or critically observe."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.46",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54"
+      ]
+    },
+    {
+      "id": "3.47",
+      "label": "nonconformity",
+      "definition": "non-fulfilment of a requirement (3.56)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.47",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.56",
+        "3.16",
+        "3.17"
+      ]
+    },
+    {
+      "id": "3.48",
+      "label": "non-repudiation",
+      "definition": "ability to prove the occurrence of a claimed event (3.21) or action and its originating entities",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.48",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.21"
+      ]
+    },
+    {
+      "id": "3.49",
+      "label": "objective",
+      "definition": "result to be achieved",
+      "notes": [
+        "An objective can be strategic, tactical, or operational. | Objectives can relate to different disciplines (such as financial, health and safety, and environmental goals) and can apply at different levels [such as strategic, organization-wide, project, product and process (3.54)]. | An objective can be expressed in other ways, e.g. as an intended outcome, a purpose, an operational criterion, as an information security objective or by the use of other words with similar meaning (e.g. aim, goal, or target). | In the context of information security management systems, information security objectives are set by the organization, consistent with the information security policy, to achieve specific results."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.49",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.58",
+        "3.61",
+        "3.41",
+        "3.12",
+        "3.22",
+        "3.26"
+      ]
+    },
+    {
+      "id": "3.50",
+      "label": "organization",
+      "definition": "person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives (3.49)",
+      "notes": [
+        "The concept of organization includes but is not limited to sole-trader, company, corporation, firm, enterprise, authority, partnership, charity or institution, or part or combination thereof, whether incorporated or not, public or private."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.50",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.49",
+        "3.41",
+        "3.76",
+        "3.24",
+        "3.53",
+        "3.34",
+        "3.74",
+        "3.37",
+        "3.75",
+        "3.23",
+        "3.19",
+        "3.38",
+        "3.51",
+        "3.69"
+      ]
+    },
+    {
+      "id": "3.51",
+      "label": "outsource",
+      "definition": "make an arrangement where an external organization (3.50) performs part of an organization's function or process (3.54)",
+      "notes": [
+        "An external organization is outside the scope of the management system (3.41), although the outsourced function or process is within the scope."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.51",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.54"
+      ]
+    },
+    {
+      "id": "3.52",
+      "label": "performance",
+      "definition": "measurable result",
+      "notes": [
+        "Performance can relate either to quantitative or qualitative findings. | Performance can relate to the management of activities, processes (3.54), products (including services), systems or organizations (3.50)."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.52",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.13",
+        "3.24"
+      ]
+    },
+    {
+      "id": "3.53",
+      "label": "policy",
+      "definition": "intentions and direction of an organization (3.50), as formally expressed by its top management (3.75)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.53",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.41",
+        "3.30",
+        "3.70",
+        "3.75"
+      ]
+    },
+    {
+      "id": "3.54",
+      "label": "process",
+      "definition": "set of interrelated or interacting activities which transforms inputs into outputs",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.54",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.3",
+        "3.41",
+        "3.65",
+        "3.72",
+        "3.67",
+        "3.32",
+        "3.64",
+        "3.63",
+        "3.43",
+        "3.68",
+        "3.10",
+        "3.29",
+        "3.51",
+        "3.33",
+        "3.46"
+      ]
+    },
+    {
+      "id": "3.55",
+      "label": "reliability",
+      "definition": "property of consistent intended behaviour and results",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.55",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.56",
+      "label": "requirement",
+      "definition": "need or expectation that is stated, generally implied or obligatory",
+      "notes": [
+        "\"Generally implied\" means that it is custom or common practice for the organization and interested parties that the need or expectation under consideration is implied. | A specified requirement is one that is stated, for example in documented information."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.56",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.47",
+        "3.1",
+        "3.11"
+      ]
+    },
+    {
+      "id": "3.57",
+      "label": "residual risk",
+      "definition": "risk (3.61) remaining after risk treatment (3.72)",
+      "notes": [
+        "Residual risk can contain unidentified risk. | Residual risk can also be referred to as \"retained risk\"."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.57",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61",
+        "3.72"
+      ]
+    },
+    {
+      "id": "3.58",
+      "label": "review",
+      "definition": "activity undertaken to determine the suitability, adequacy and effectiveness (3.20) of the subject matter to achieve established objectives (3.49)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.58",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.49",
+        "3.20"
+      ]
+    },
+    {
+      "id": "3.59",
+      "label": "review object",
+      "definition": "specific item being reviewed",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.59",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.60"
+      ]
+    },
+    {
+      "id": "3.60",
+      "label": "review objective",
+      "definition": "statement describing what is to be achieved as a result of a review (3.59)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.60",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.59"
+      ]
+    },
+    {
+      "id": "3.61",
+      "label": "risk",
+      "definition": "effect of uncertainty on objectives (3.49)",
+      "notes": [
+        "An effect is a deviation from the expected \u2014 positive or negative. | Uncertainty is the state, even partial, of deficiency of information related to, understanding or knowledge of, an event, its consequence, or likelihood. | Risk is often characterized by reference to potential \"events\" (as defined in ISO Guide 73:2009, 3.5.1.3) and \"consequences\" (as defined in ISO Guide 73:2009, 3.6.1.3), or a combination of these. | Risk is often expressed in terms of a combination of the consequences of an event (including changes in circumstances) and the associated \"likelihood\" (as defined in ISO Guide 73:2009, 3.6.1.1) of occurrence. | In the context of information security management systems, information security risks can be expressed as effect of uncertainty on information security objectives. | Information security risk is associated with the potential that threats will exploit vulnerabilities of an information asset or group of information assets and thereby cause harm to an organization."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.61",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.14",
+        "3.49",
+        "3.39",
+        "3.65",
+        "3.72",
+        "3.67",
+        "3.57",
+        "3.63",
+        "3.70",
+        "3.68",
+        "3.66",
+        "3.69",
+        "3.62",
+        "3.71"
+      ]
+    },
+    {
+      "id": "3.62",
+      "label": "risk acceptance",
+      "definition": "informed decision to take a particular risk (3.61)",
+      "notes": [
+        "Risk acceptance can occur without risk treatment (3.72) or during the process (3.54) of risk treatment. | Accepted risks are subject to monitoring (3.46) and review (3.58)."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.62",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61"
+      ]
+    },
+    {
+      "id": "3.63",
+      "label": "risk analysis",
+      "definition": "process (3.54) to comprehend the nature of risk (3.61) and to determine the level of risk (3.39)",
+      "notes": [
+        "Risk analysis provides the basis for risk evaluation (3.67) and decisions about risk treatment (3.72). | Risk analysis includes risk estimation."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.63",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.39",
+        "3.61",
+        "3.67",
+        "3.64"
+      ]
+    },
+    {
+      "id": "3.64",
+      "label": "risk assessment",
+      "definition": "overall process (3.54) of risk identification (3.68), risk analysis (3.63) and risk evaluation (3.67)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.64",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": true,
+      "related": [
+        "3.54",
+        "3.67",
+        "3.63",
+        "3.68"
+      ]
+    },
+    {
+      "id": "3.65",
+      "label": "risk communication and consultation",
+      "definition": "set of continual and iterative processes (3.54) that an organization conducts to provide, share or obtain information, and to engage in dialogue with stakeholders (3.37) regarding the management of risk (3.61)",
+      "notes": [
+        "The information can relate to the existence, nature, form, likelihood (3.41), significance, evaluation, acceptability and treatment of risk. | Consultation is a two-way process of informed communication between an organization (3.50) and its stakeholders on an issue prior to making a decision or determining a direction on that issue. Consultation is: \u2014 a process which impacts on a decision through influence rather than power; and \u2014 an input to decision making, not joint decision making."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.65",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.61",
+        "3.37"
+      ]
+    },
+    {
+      "id": "3.66",
+      "label": "risk criteria",
+      "definition": "terms of reference against which the significance of risk (3.61) is evaluated",
+      "notes": [
+        "Risk criteria are based on organizational objectives, and external context (3.22) and internal context (3.38). | Risk criteria can be derived from standards, laws, policies (3.53) and other requirements (3.56)."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.66",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61",
+        "3.67"
+      ]
+    },
+    {
+      "id": "3.67",
+      "label": "risk evaluation",
+      "definition": "process (3.54) of comparing the results of risk analysis (3.63) with risk criteria (3.66) to determine whether the risk (3.61) and/or its magnitude is acceptable or tolerable",
+      "notes": [
+        "Risk evaluation assists in the decision about risk treatment (3.72)."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.67",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.61",
+        "3.64",
+        "3.63",
+        "3.66"
+      ]
+    },
+    {
+      "id": "3.68",
+      "label": "risk identification",
+      "definition": "process (3.54) of finding, recognizing and describing risks (3.61)",
+      "notes": [
+        "Risk identification involves the identification of risk sources, events (3.21), their causes and their potential consequences (3.12). | Risk identification can involve historical data, theoretical analysis, informed and expert opinions, and stakeholders' (3.37) needs."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.68",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.61",
+        "3.64"
+      ]
+    },
+    {
+      "id": "3.69",
+      "label": "risk management",
+      "definition": "coordinated activities to direct and control an organization (3.50) with regard to risk (3.61)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.69",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.61"
+      ]
+    },
+    {
+      "id": "3.70",
+      "label": "risk management process",
+      "definition": "systematic application of management policies (3.53), procedures and practices to the activities of communicating, consulting, establishing the context and identifying, analysing, evaluating, treating, monitoring and reviewing risk (3.61)",
+      "notes": [
+        "ISO/IEC 27005 uses the term \"process\" (3.54) to describe risk management overall. The elements within the risk management (3.69) process are referred to as \"activities\"."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.70",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61",
+        "3.53"
+      ]
+    },
+    {
+      "id": "3.71",
+      "label": "risk owner",
+      "definition": "person or entity with the accountability and authority to manage a risk (3.61)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.71",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.61"
+      ]
+    },
+    {
+      "id": "3.72",
+      "label": "risk treatment",
+      "definition": "process (3.54) to modify risk (3.61)",
+      "notes": [
+        "Risk treatment can involve: \u2014 avoiding the risk by deciding not to start or continue with the activity that gives rise to the risk; \u2014 taking or increasing risk in order to pursue an opportunity; \u2014 removing the risk source; \u2014 changing the likelihood (3.40); \u2014 changing the consequences (3.12); \u2014 sharing the risk with another party or parties (including contracts and risk financing); \u2014 retaining the risk by informed choice. | Risk treatments that deal with negative consequences are sometimes referred to as \"risk mitigation\", \"risk elimination\", \"risk prevention\" and \"risk reduction\". | Risk treatment can create new risks or modify existing risks."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.72",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.54",
+        "3.61",
+        "3.57"
+      ]
+    },
+    {
+      "id": "3.73",
+      "label": "security implementation standard",
+      "definition": "document specifying authorized ways for realizing security",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.73",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": []
+    },
+    {
+      "id": "3.74",
+      "label": "threat",
+      "definition": "potential cause of an unwanted incident, which can result in harm to a system or organization (3.50)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.74",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.77"
+      ]
+    },
+    {
+      "id": "3.75",
+      "label": "top management",
+      "definition": "person or group of people who directs and controls an organization (3.50) at the highest level",
+      "notes": [
+        "Top management has the power to delegate authority and provide resources within the organization. | If the scope of the management system (3.41) covers only part of an organization, then top management refers to those who direct and control that part of the organization. | Top management is sometimes called executive management and can include Chief Executive Officers, Chief Financial Officers, Chief Information Officers, and similar roles."
+      ],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.75",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.53"
+      ]
+    },
+    {
+      "id": "3.76",
+      "label": "trusted information communication entity",
+      "definition": "autonomous organization (3.50) supporting information exchange within an information sharing community (3.34)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.76",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.50",
+        "3.34"
+      ]
+    },
+    {
+      "id": "3.77",
+      "label": "vulnerability",
+      "definition": "weakness of an asset or control (3.14) that can be exploited by one or more threats (3.74)",
+      "notes": [],
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.77",
+      "inScheme": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "isTopConcept": false,
+      "related": [
+        "3.14",
+        "3.74"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "3.1",
+      "target": "3.56",
+      "type": "related"
+    },
+    {
+      "source": "3.11",
+      "target": "3.56",
+      "type": "related"
+    },
+    {
+      "source": "3.47",
+      "target": "3.56",
+      "type": "related"
+    },
+    {
+      "source": "3.13",
+      "target": "3.52",
+      "type": "related"
+    },
+    {
+      "source": "3.24",
+      "target": "3.52",
+      "type": "related"
+    },
+    {
+      "source": "3.16",
+      "target": "3.47",
+      "type": "related"
+    },
+    {
+      "source": "3.17",
+      "target": "3.47",
+      "type": "related"
+    },
+    {
+      "source": "3.19",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.38",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.23",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.24",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.34",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.37",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.41",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.49",
+      "target": "3.50",
+      "type": "related"
+    },
+    {
+      "source": "3.20",
+      "target": "3.58",
+      "type": "related"
+    },
+    {
+      "source": "3.49",
+      "target": "3.58",
+      "type": "related"
+    },
+    {
+      "source": "3.22",
+      "target": "3.49",
+      "type": "related"
+    },
+    {
+      "source": "3.26",
+      "target": "3.49",
+      "type": "related"
+    },
+    {
+      "source": "3.12",
+      "target": "3.49",
+      "type": "related"
+    },
+    {
+      "source": "3.41",
+      "target": "3.49",
+      "type": "related"
+    },
+    {
+      "source": "3.25",
+      "target": "3.42",
+      "type": "related"
+    },
+    {
+      "source": "3.18",
+      "target": "3.42",
+      "type": "related"
+    },
+    {
+      "source": "3.33",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.46",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.10",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.29",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.3",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.32",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.43",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.51",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.41",
+      "target": "3.54",
+      "type": "related"
+    },
+    {
+      "source": "3.10",
+      "target": "3.28",
+      "type": "related"
+    },
+    {
+      "source": "3.23",
+      "target": "3.28",
+      "type": "related"
+    },
+    {
+      "source": "3.12",
+      "target": "3.39",
+      "type": "related"
+    },
+    {
+      "source": "3.44",
+      "target": "3.8",
+      "type": "related"
+    },
+    {
+      "source": "3.18",
+      "target": "3.8",
+      "type": "related"
+    },
+    {
+      "source": "3.42",
+      "target": "3.8",
+      "type": "related"
+    },
+    {
+      "source": "3.12",
+      "target": "3.21",
+      "type": "related"
+    },
+    {
+      "source": "3.59",
+      "target": "3.60",
+      "type": "related"
+    },
+    {
+      "source": "3.57",
+      "target": "3.61",
+      "type": "related"
+    },
+    {
+      "source": "3.14",
+      "target": "3.61",
+      "type": "related"
+    },
+    {
+      "source": "3.39",
+      "target": "3.61",
+      "type": "related"
+    },
+    {
+      "source": "3.49",
+      "target": "3.61",
+      "type": "related"
+    },
+    {
+      "source": "3.21",
+      "target": "3.48",
+      "type": "related"
+    },
+    {
+      "source": "3.3",
+      "target": "3.4",
+      "type": "related"
+    },
+    {
+      "source": "3.30",
+      "target": "3.31",
+      "type": "related"
+    },
+    {
+      "source": "3.28",
+      "target": "3.31",
+      "type": "related"
+    },
+    {
+      "source": "3.34",
+      "target": "3.76",
+      "type": "related"
+    },
+    {
+      "source": "3.50",
+      "target": "3.76",
+      "type": "related"
+    },
+    {
+      "source": "3.37",
+      "target": "3.65",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.65",
+      "type": "related"
+    },
+    {
+      "source": "3.54",
+      "target": "3.65",
+      "type": "related"
+    },
+    {
+      "source": "3.57",
+      "target": "3.72",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.72",
+      "type": "related"
+    },
+    {
+      "source": "3.54",
+      "target": "3.72",
+      "type": "related"
+    },
+    {
+      "source": "3.66",
+      "target": "3.67",
+      "type": "related"
+    },
+    {
+      "source": "3.63",
+      "target": "3.67",
+      "type": "related"
+    },
+    {
+      "source": "3.64",
+      "target": "3.67",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.67",
+      "type": "related"
+    },
+    {
+      "source": "3.54",
+      "target": "3.67",
+      "type": "related"
+    },
+    {
+      "source": "3.30",
+      "target": "3.53",
+      "type": "related"
+    },
+    {
+      "source": "3.41",
+      "target": "3.53",
+      "type": "related"
+    },
+    {
+      "source": "3.50",
+      "target": "3.53",
+      "type": "related"
+    },
+    {
+      "source": "3.74",
+      "target": "3.77",
+      "type": "related"
+    },
+    {
+      "source": "3.14",
+      "target": "3.77",
+      "type": "related"
+    },
+    {
+      "source": "3.50",
+      "target": "3.74",
+      "type": "related"
+    },
+    {
+      "source": "3.14",
+      "target": "3.30",
+      "type": "related"
+    },
+    {
+      "source": "3.28",
+      "target": "3.30",
+      "type": "related"
+    },
+    {
+      "source": "3.31",
+      "target": "3.32",
+      "type": "related"
+    },
+    {
+      "source": "3.63",
+      "target": "3.64",
+      "type": "related"
+    },
+    {
+      "source": "3.54",
+      "target": "3.64",
+      "type": "related"
+    },
+    {
+      "source": "3.14",
+      "target": "3.15",
+      "type": "related"
+    },
+    {
+      "source": "3.39",
+      "target": "3.40",
+      "type": "related"
+    },
+    {
+      "source": "3.39",
+      "target": "3.63",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.63",
+      "type": "related"
+    },
+    {
+      "source": "3.54",
+      "target": "3.63",
+      "type": "related"
+    },
+    {
+      "source": "3.42",
+      "target": "3.43",
+      "type": "related"
+    },
+    {
+      "source": "3.53",
+      "target": "3.70",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.70",
+      "type": "related"
+    },
+    {
+      "source": "3.53",
+      "target": "3.75",
+      "type": "related"
+    },
+    {
+      "source": "3.50",
+      "target": "3.75",
+      "type": "related"
+    },
+    {
+      "source": "3.64",
+      "target": "3.68",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.68",
+      "type": "related"
+    },
+    {
+      "source": "3.54",
+      "target": "3.68",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.66",
+      "type": "related"
+    },
+    {
+      "source": "3.28",
+      "target": "3.29",
+      "type": "related"
+    },
+    {
+      "source": "3.28",
+      "target": "3.36",
+      "type": "related"
+    },
+    {
+      "source": "3.28",
+      "target": "3.7",
+      "type": "related"
+    },
+    {
+      "source": "3.50",
+      "target": "3.51",
+      "type": "related"
+    },
+    {
+      "source": "3.50",
+      "target": "3.69",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.69",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.62",
+      "type": "related"
+    },
+    {
+      "source": "3.61",
+      "target": "3.71",
+      "type": "related"
+    }
+  ],
+  "metadata": {
+    "scheme": {
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/VocabularyScheme",
+      "label": "ISO/IEC 27000:2018 Information Security Vocabulary",
+      "description": null
+    },
+    "stats": {
+      "totalTerms": 77,
+      "totalRelationships": 94,
+      "topConcepts": 3
+    }
+  }
+}

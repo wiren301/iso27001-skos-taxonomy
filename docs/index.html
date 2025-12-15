@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO 27000 Information Security Vocabulary - SKOS Viewer</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            width: 320px;
+            background: #161b22;
+            border-right: 1px solid #30363d;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        #sidebar-header {
+            padding: 16px;
+            border-bottom: 1px solid #30363d;
+        }
+
+        #sidebar-header h1 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #58a6ff;
+            margin-bottom: 4px;
+        }
+
+        #sidebar-header .subtitle {
+            font-size: 12px;
+            color: #6e7681;
+        }
+
+        #search-container {
+            padding: 12px 16px;
+            border-bottom: 1px solid #30363d;
+        }
+
+        #search {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            background: #0d1117;
+            color: #c9d1d9;
+            font-size: 13px;
+            outline: none;
+        }
+
+        #search:focus {
+            border-color: #58a6ff;
+        }
+
+        #search::placeholder {
+            color: #6e7681;
+        }
+
+        #term-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 0;
+        }
+
+        .term-item {
+            padding: 8px 16px;
+            cursor: pointer;
+            border-left: 3px solid transparent;
+            transition: all 0.15s ease;
+        }
+
+        .term-item:hover {
+            background: #21262d;
+        }
+
+        .term-item.selected {
+            background: #1f6feb20;
+            border-left-color: #58a6ff;
+        }
+
+        .term-item.top-concept {
+            border-left-color: #238636;
+        }
+
+        .term-item.top-concept.selected {
+            border-left-color: #58a6ff;
+        }
+
+        .term-id {
+            font-size: 11px;
+            color: #6e7681;
+            font-family: monospace;
+        }
+
+        .term-label {
+            font-size: 13px;
+            color: #c9d1d9;
+            margin-top: 2px;
+        }
+
+        #stats-bar {
+            padding: 12px 16px;
+            border-top: 1px solid #30363d;
+            font-size: 11px;
+            color: #6e7681;
+            background: #0d1117;
+        }
+
+        /* Main content */
+        #main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        #graph-container {
+            flex: 1;
+            position: relative;
+        }
+
+        #graph {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Detail panel */
+        #detail-panel {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 400px;
+            max-height: calc(100vh - 32px);
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+
+        #detail-panel.visible {
+            display: flex;
+        }
+
+        #detail-header {
+            padding: 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        #detail-header h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #58a6ff;
+        }
+
+        #detail-header .notation {
+            font-size: 12px;
+            color: #6e7681;
+            font-family: monospace;
+            margin-top: 4px;
+        }
+
+        #close-detail {
+            background: none;
+            border: none;
+            color: #6e7681;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 1;
+            padding: 4px;
+        }
+
+        #close-detail:hover {
+            color: #c9d1d9;
+        }
+
+        #detail-content {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .skos-section {
+            margin-bottom: 16px;
+        }
+
+        .skos-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .skos-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #8b949e;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .skos-label code {
+            font-size: 10px;
+            color: #6e7681;
+            font-weight: normal;
+        }
+
+        .skos-value {
+            font-size: 13px;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        .skos-value.uri {
+            font-family: monospace;
+            font-size: 11px;
+            color: #58a6ff;
+            word-break: break-all;
+        }
+
+        .skos-value.empty {
+            color: #6e7681;
+            font-style: italic;
+        }
+
+        .related-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .related-tag {
+            background: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 12px;
+            color: #58a6ff;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .related-tag:hover {
+            background: #30363d;
+            border-color: #58a6ff;
+        }
+
+        .note-item {
+            background: #21262d;
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .note-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Graph nodes */
+        .node {
+            cursor: pointer;
+        }
+
+        .node circle {
+            stroke: #30363d;
+            stroke-width: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .node:hover circle {
+            stroke: #58a6ff;
+            stroke-width: 3px;
+        }
+
+        .node.highlighted circle {
+            stroke: #f0883e;
+            stroke-width: 3px;
+        }
+
+        .node.selected circle {
+            stroke: #58a6ff;
+            stroke-width: 4px;
+        }
+
+        .node.dimmed circle {
+            opacity: 0.2;
+        }
+
+        .node.dimmed text {
+            opacity: 0.2;
+        }
+
+        .node text {
+            font-size: 11px;
+            fill: #8b949e;
+            pointer-events: none;
+        }
+
+        .node.highlighted text,
+        .node.selected text {
+            fill: #c9d1d9;
+            font-weight: 600;
+        }
+
+        .link {
+            stroke: #30363d;
+            stroke-opacity: 0.6;
+            transition: all 0.2s ease;
+        }
+
+        .link.highlighted {
+            stroke: #58a6ff;
+            stroke-opacity: 1;
+            stroke-width: 2px;
+        }
+
+        .link.dimmed {
+            stroke-opacity: 0.1;
+        }
+
+        /* Legend */
+        #legend {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(22, 27, 34, 0.95);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 11px;
+        }
+
+        #legend h3 {
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #8b949e;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .legend-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .legend-circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .legend-line {
+            width: 20px;
+            height: 2px;
+            background: #30363d;
+        }
+
+        /* Instructions */
+        #instructions {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(22, 27, 34, 0.95);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 11px;
+            color: #6e7681;
+        }
+
+        #instructions kbd {
+            background: #30363d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 10px;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0d1117;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #484f58;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div id="sidebar-header">
+            <h1>ISO/IEC 27000:2018</h1>
+            <div class="subtitle">Information Security Vocabulary</div>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Search terms...">
+        </div>
+        <div id="term-list"></div>
+        <div id="stats-bar"></div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+        <div id="graph-container">
+            <svg id="graph"></svg>
+        </div>
+
+        <!-- Detail panel -->
+        <div id="detail-panel">
+            <div id="detail-header">
+                <div>
+                    <h2 id="detail-title"></h2>
+                    <div class="notation" id="detail-notation"></div>
+                </div>
+                <button id="close-detail">&times;</button>
+            </div>
+            <div id="detail-content"></div>
+        </div>
+
+        <!-- Legend -->
+        <div id="legend">
+            <h3>Legend</h3>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #238636;"></div>
+                <span>Top concept (hub)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #1f6feb;"></div>
+                <span>Standard term</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-line"></div>
+                <span>skos:related</span>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div id="instructions">
+            Scroll to zoom | Drag to pan<br>
+            Click term to inspect | <kbd>Esc</kbd> to reset
+        </div>
+    </div>
+
+    <script>
+        let graphData = null;
+        let selectedNode = null;
+        let simulation = null;
+        let node = null;
+        let link = null;
+
+        // Load data and initialize
+        fetch('iso27000-graph.json')
+            .then(response => response.json())
+            .then(data => {
+                graphData = data;
+                initTermList(data);
+                initGraph(data);
+                updateStats(data);
+            })
+            .catch(err => {
+                console.error('Error loading graph data:', err);
+                document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#f85149;">Error loading data. Ensure iso27000-graph.json exists.</div>';
+            });
+
+        function initTermList(data) {
+            const termList = document.getElementById('term-list');
+            const nodeById = {};
+
+            data.nodes.forEach(n => {
+                nodeById[n.id] = n;
+
+                const item = document.createElement('div');
+                item.className = 'term-item' + (n.isTopConcept ? ' top-concept' : '');
+                item.dataset.id = n.id;
+                item.innerHTML = `
+                    <div class="term-id">${n.id}</div>
+                    <div class="term-label">${n.label}</div>
+                `;
+                item.addEventListener('click', () => selectTerm(n.id));
+                termList.appendChild(item);
+            });
+
+            // Search functionality
+            const searchInput = document.getElementById('search');
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                const items = termList.querySelectorAll('.term-item');
+
+                items.forEach(item => {
+                    const id = item.dataset.id;
+                    const n = nodeById[id];
+                    const match = !query ||
+                        n.label.toLowerCase().includes(query) ||
+                        n.id.includes(query) ||
+                        (n.definition && n.definition.toLowerCase().includes(query));
+                    item.style.display = match ? '' : 'none';
+                });
+
+                // Also filter graph
+                if (node) {
+                    if (!query) {
+                        resetHighlight();
+                    } else {
+                        const matchingIds = new Set();
+                        data.nodes.forEach(n => {
+                            if (n.label.toLowerCase().includes(query) ||
+                                n.id.includes(query) ||
+                                (n.definition && n.definition.toLowerCase().includes(query))) {
+                                matchingIds.add(n.id);
+                            }
+                        });
+
+                        node.classed('highlighted', n => matchingIds.has(n.id))
+                            .classed('dimmed', n => !matchingIds.has(n.id));
+                        link.classed('dimmed', true);
+                    }
+                }
+            });
+        }
+
+        function updateStats(data) {
+            const stats = data.metadata.stats;
+            document.getElementById('stats-bar').textContent =
+                `${stats.totalTerms} terms | ${stats.totalRelationships} relationships | ${stats.topConcepts} top concepts`;
+        }
+
+        function selectTerm(termId) {
+            const n = graphData.nodes.find(n => n.id === termId);
+            if (!n) return;
+
+            selectedNode = n;
+
+            // Update sidebar selection
+            document.querySelectorAll('.term-item').forEach(item => {
+                item.classList.toggle('selected', item.dataset.id === termId);
+            });
+
+            // Update graph highlighting
+            const connectedIds = new Set([termId, ...n.related]);
+
+            node.classed('selected', d => d.id === termId)
+                .classed('highlighted', d => d.id !== termId && connectedIds.has(d.id))
+                .classed('dimmed', d => !connectedIds.has(d.id));
+
+            link.classed('highlighted', l => l.source.id === termId || l.target.id === termId)
+                .classed('dimmed', l => l.source.id !== termId && l.target.id !== termId);
+
+            // Show detail panel
+            showDetailPanel(n);
+
+            // Scroll term into view in sidebar
+            const termItem = document.querySelector(`.term-item[data-id="${termId}"]`);
+            if (termItem) {
+                termItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function showDetailPanel(n) {
+            const panel = document.getElementById('detail-panel');
+            const content = document.getElementById('detail-content');
+
+            document.getElementById('detail-title').textContent = n.label;
+            document.getElementById('detail-notation').textContent = `Term ${n.id}`;
+
+            // Build SKOS properties display
+            let html = '';
+
+            // URI
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">URI <code>@id</code></div>
+                    <div class="skos-value uri">${n.uri}</div>
+                </div>
+            `;
+
+            // Type
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">Type <code>rdf:type</code></div>
+                    <div class="skos-value">skos:Concept${n.isTopConcept ? ', skos:topConceptOf' : ''}</div>
+                </div>
+            `;
+
+            // prefLabel
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">Preferred Label <code>skos:prefLabel</code></div>
+                    <div class="skos-value">"${n.label}"@en</div>
+                </div>
+            `;
+
+            // notation
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">Notation <code>skos:notation</code></div>
+                    <div class="skos-value">"${n.id}"</div>
+                </div>
+            `;
+
+            // definition
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">Definition <code>skos:definition</code></div>
+                    <div class="skos-value${!n.definition ? ' empty' : ''}">${n.definition || '(none)'}</div>
+                </div>
+            `;
+
+            // inScheme
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">In Scheme <code>skos:inScheme</code></div>
+                    <div class="skos-value uri">${n.inScheme || '(none)'}</div>
+                </div>
+            `;
+
+            // related
+            html += `
+                <div class="skos-section">
+                    <div class="skos-label">Related <code>skos:related</code></div>
+            `;
+            if (n.related && n.related.length > 0) {
+                html += '<div class="related-list">';
+                n.related.forEach(relId => {
+                    const relNode = graphData.nodes.find(x => x.id === relId);
+                    const label = relNode ? relNode.label : relId;
+                    html += `<span class="related-tag" data-id="${relId}">${relId}: ${label}</span>`;
+                });
+                html += '</div>';
+            } else {
+                html += '<div class="skos-value empty">(none)</div>';
+            }
+            html += '</div>';
+
+            // notes
+            if (n.notes && n.notes.length > 0) {
+                html += `
+                    <div class="skos-section">
+                        <div class="skos-label">Notes <code>skos:note</code></div>
+                `;
+                n.notes.forEach(note => {
+                    html += `<div class="note-item">${note}</div>`;
+                });
+                html += '</div>';
+            }
+
+            content.innerHTML = html;
+            panel.classList.add('visible');
+
+            // Add click handlers for related tags
+            content.querySelectorAll('.related-tag').forEach(tag => {
+                tag.addEventListener('click', () => {
+                    selectTerm(tag.dataset.id);
+                });
+            });
+        }
+
+        function resetHighlight() {
+            selectedNode = null;
+            document.querySelectorAll('.term-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            if (node) {
+                node.classed('selected', false)
+                    .classed('highlighted', false)
+                    .classed('dimmed', false);
+            }
+            if (link) {
+                link.classed('highlighted', false)
+                    .classed('dimmed', false);
+            }
+            document.getElementById('detail-panel').classList.remove('visible');
+        }
+
+        function initGraph(data) {
+            const container = document.getElementById('graph-container');
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            // Count connections for sizing
+            const connectionCount = {};
+            data.links.forEach(link => {
+                connectionCount[link.source] = (connectionCount[link.source] || 0) + 1;
+                connectionCount[link.target] = (connectionCount[link.target] || 0) + 1;
+            });
+
+            const svg = d3.select('#graph')
+                .attr('width', width)
+                .attr('height', height);
+
+            const g = svg.append('g');
+            const zoom = d3.zoom()
+                .scaleExtent([0.2, 4])
+                .on('zoom', (event) => {
+                    g.attr('transform', event.transform);
+                });
+            svg.call(zoom);
+
+            simulation = d3.forceSimulation(data.nodes)
+                .force('link', d3.forceLink(data.links)
+                    .id(d => d.id)
+                    .distance(100))
+                .force('charge', d3.forceManyBody()
+                    .strength(-300))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(40));
+
+            link = g.append('g')
+                .selectAll('line')
+                .data(data.links)
+                .join('line')
+                .attr('class', 'link');
+
+            node = g.append('g')
+                .selectAll('g')
+                .data(data.nodes)
+                .join('g')
+                .attr('class', 'node')
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+
+            node.append('circle')
+                .attr('r', d => {
+                    const count = connectionCount[d.id] || 0;
+                    return d.isTopConcept ? 14 : (count >= 3 ? 10 : 7);
+                })
+                .attr('fill', d => d.isTopConcept ? '#238636' : '#1f6feb');
+
+            node.append('text')
+                .attr('dx', 15)
+                .attr('dy', 4)
+                .text(d => d.label);
+
+            node.on('click', (event, d) => {
+                event.stopPropagation();
+                selectTerm(d.id);
+            });
+
+            svg.on('click', () => {
+                resetHighlight();
+                document.getElementById('search').value = '';
+            });
+
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                node.attr('transform', d => `translate(${d.x},${d.y})`);
+            });
+
+            function dragstarted(event) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+
+            function dragged(event) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+            }
+
+            function dragended(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+            }
+
+            window.addEventListener('resize', () => {
+                const newWidth = container.clientWidth;
+                const newHeight = container.clientHeight;
+                svg.attr('width', newWidth).attr('height', newHeight);
+                simulation.force('center', d3.forceCenter(newWidth / 2, newHeight / 2));
+                simulation.alpha(0.3).restart();
+            });
+        }
+
+        // Close detail panel
+        document.getElementById('close-detail').addEventListener('click', () => {
+            document.getElementById('detail-panel').classList.remove('visible');
+        });
+
+        // Escape to reset
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                resetHighlight();
+                document.getElementById('search').value = '';
+            }
+        });
+    </script>
+</body>
+</html>
