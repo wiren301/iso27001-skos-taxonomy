@@ -41,7 +41,10 @@ export function About() {
             </p>
           </section>
 
-          <section className="about-section disclaimer">
+        </div>
+
+        <div className="about-right">
+          <div className="about-section disclaimer">
             <h2>Disclaimer</h2>
             <p>
               This taxonomy is an <strong>original academic artifact</strong> developed as scholarly
@@ -57,42 +60,6 @@ export function About() {
               For authoritative definitions, consult the official standards at{' '}
               <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer">iso.org</a>.
             </p>
-          </section>
-        </div>
-
-        <div className="about-right">
-          <div className="standards-grid">
-            <div className="standard-card">
-              <div className="standard-header">
-                <h2>ISO 27000</h2>
-                <span className="standard-subtitle">Vocabulary</span>
-              </div>
-              <p className="standard-description">
-                77 terms that define information security concepts. The foundation
-                that establishes common language across all standards.
-              </p>
-            </div>
-
-            <div className="standard-card">
-              <div className="standard-header">
-                <h2>ISO 27001</h2>
-                <span className="standard-subtitle">Requirements</span>
-              </div>
-              <p className="standard-description">
-                44 clauses specifying what an ISMS must do, plus 93 Annex A controls.
-              </p>
-            </div>
-
-            <div className="standard-card">
-              <div className="standard-header">
-                <h2>ISO 27002</h2>
-                <span className="standard-subtitle">Controls</span>
-              </div>
-              <p className="standard-description">
-                93 security controls with detailed implementation guidance across
-                4 themes.
-              </p>
-            </div>
           </div>
         </div>
       </div>
