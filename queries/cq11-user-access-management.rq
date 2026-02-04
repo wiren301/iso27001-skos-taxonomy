@@ -1,0 +1,15 @@
+# CQ11: What guidance exists for user access management?
+# Category B: Implementation Guidance
+# Expected: Controls 5.16-5.18 for access provisioning
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?notation ?label ?definition
+WHERE {
+  ?control skos:inScheme <https://wiren301.github.io/iso27001-skos-taxonomy/27002/AnnexAScheme> ;
+           skos:notation ?notation ;
+           skos:prefLabel ?label ;
+           skos:definition ?definition .
+  FILTER(REGEX(?notation, "^5\\.1[678]$"))
+}
+ORDER BY ?notation

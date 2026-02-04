@@ -1,0 +1,10 @@
+# CQ02: What sub-requirements exist for leadership?
+# Category A: Requirement Retrieval
+# Expected: Items a-h detailing leadership responsibilities
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?note
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.1> skos:note ?note .
+}

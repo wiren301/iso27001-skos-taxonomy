@@ -1,0 +1,10 @@
+# CQ29: Total Annex A controls?
+# Category G: Completeness Validation
+# Expected: 93 controls
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT (COUNT(?control) AS ?count)
+WHERE {
+  ?control skos:inScheme <https://wiren301.github.io/iso27001-skos-taxonomy/27001/AnnexAScheme> .
+}

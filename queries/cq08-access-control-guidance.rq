@@ -1,0 +1,12 @@
+# CQ08: How should I implement access control?
+# Category B: Implementation Guidance
+# Expected: ISO 27002 implementation guidance for control 5.15
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?definition
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.15> skos:exactMatch ?iso27002control .
+  ?iso27002control skos:prefLabel ?label ;
+                   skos:definition ?definition .
+}

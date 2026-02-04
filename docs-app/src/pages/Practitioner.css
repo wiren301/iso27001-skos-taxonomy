@@ -1,0 +1,476 @@
+.practitioner {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar */
+.practitioner-sidebar {
+  width: 280px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.practitioner-sidebar h3 {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+}
+
+.clause-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clause-nav li button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  color: var(--text-primary);
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.clause-nav li button:hover {
+  background: var(--bg-tertiary);
+}
+
+.clause-nav li button.active {
+  background: var(--bg-tertiary);
+  border-left-color: currentColor;
+}
+
+.clause-nav .clause-num {
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 24px;
+}
+
+.clause-nav .clause-label {
+  flex: 1;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+/* Content Area */
+.practitioner-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.content-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin: 0;
+}
+
+/* Clauses List */
+.clauses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toggle-icon {
+  font-size: 10px;
+  color: var(--text-secondary);
+  width: 12px;
+  flex-shrink: 0;
+}
+
+.clause-count {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--border-color);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* Clause Cards (Collapsible Items) */
+.clause-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.clause-card:hover {
+  border-color: var(--border-hover);
+}
+
+.clause-card.expanded {
+  border-color: var(--accent-blue);
+}
+
+.clause-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.clause-header:hover {
+  background: var(--bg-tertiary);
+}
+
+.clause-card.expanded .clause-header {
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.clause-card .notation {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  color: var(--accent-blue);
+  background: var(--bg-primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.clause-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+  margin: 0;
+}
+
+.has-control {
+  font-size: 12px;
+  color: var(--accent-green);
+  background: rgba(35, 134, 54, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Expanded Details */
+.clause-details {
+  padding: 16px;
+  background: var(--bg-primary);
+}
+
+/* Vocabulary term highlighting */
+.vocab-term {
+  background: rgba(56, 139, 253, 0.15);
+  color: var(--accent-blue);
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: help;
+  transition: background 0.15s;
+}
+
+.vocab-term:hover {
+  background: rgba(56, 139, 253, 0.3);
+}
+
+/* Detail Panel */
+.detail-panel {
+  width: 400px;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.detail-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin: 4px 0;
+}
+
+.detail-notation {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 11px;
+  color: var(--accent-blue);
+  background: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.detail-type {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.close-btn:hover {
+  color: var(--text-primary);
+}
+
+.detail-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.detail-section {
+  margin-bottom: 20px;
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.detail-section p {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Vocabulary list in detail panel */
+.vocab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vocab-item {
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.vocab-label {
+  display: block;
+  font-weight: 600;
+  color: var(--accent-blue);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.vocab-def {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Linked ISO 27002 control */
+.linked-control {
+  background: var(--bg-primary);
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid var(--accent-green);
+}
+
+.linked-control h4 {
+  color: var(--accent-green);
+}
+
+.control-card {
+  margin-top: 8px;
+}
+
+.control-notation {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 11px;
+  color: var(--accent-orange);
+  background: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.control-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.control-theme {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.control-card h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin: 0 0 12px 0;
+}
+
+.control-section {
+  margin-bottom: 12px;
+}
+
+.control-section h6 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 4px 0;
+  letter-spacing: 0.5px;
+}
+
+.control-section p {
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Control Attributes */
+.control-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+}
+
+.attribute-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.attribute-label {
+  font-size: 11px;
+  color: var(--text-secondary);
+  min-width: 70px;
+}
+
+.attribute-tag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.attribute-tag.cia {
+  background: rgba(56, 139, 253, 0.2);
+  color: var(--accent-blue);
+}
+
+.attribute-tag.nist {
+  background: rgba(163, 113, 247, 0.2);
+  color: var(--accent-purple);
+}
+
+.attribute-tag.capability {
+  background: rgba(63, 185, 80, 0.2);
+  color: var(--accent-green);
+}
+
+.attribute-tag.domain {
+  background: rgba(240, 136, 62, 0.2);
+  color: var(--accent-orange);
+}
+
+/* Guidance (collapsible) */
+.control-guidance {
+  margin-top: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+.control-guidance summary {
+  font-size: 12px;
+  color: var(--accent-blue);
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.control-guidance summary:hover {
+  text-decoration: underline;
+}
+
+.control-guidance p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 8px;
+  white-space: pre-wrap;
+}
+
+/* Vocabulary tooltip */
+.vocab-tooltip {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.vocab-tooltip strong {
+  display: block;
+  color: var(--accent-blue);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.vocab-tooltip p {
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}

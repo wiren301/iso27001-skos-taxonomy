@@ -1,0 +1,34 @@
+PC MEMBER: Ítalo Oliveira
+----------- Overall impression -----------
+The paper presents an up-to-date taxonomic analysis of ISO/IEC 27001:2022, yielding a SKOS taxonomy representing the standard. The analysis is well-structured, reproducible, and provides artifacts of practical value, including an RDF model of the standard, SPARQL queries, scripts, and visualizations.
+----------- Major strong points -----------
+- Clear research gaps have been identified via literature review.
+- Systematic, reproducible analysis.
+- Useful outcomes, publicly available on GitHub.
+- Well-written
+----------- Major weak points -----------
+- Minor justification gaps, such as why Apache Jena ARQ was used in combination with Python rdflib, if the latter can also run SPARQL queries (although slower).
+- "CQs are standard in semantic modeling but rarely applied to security standards". Where did this come from? What does support this claim?
+- No major conclusion was drawn from the analysis. This is probably the weakest point of the paper. At least, the study observes that the resulting taxonomy reveals a high sparsity of the encoded elements (a lack of interconnection), but it is unclear whether this is a feature of the standard or the taxonomic model of it.
+----------- Overall quality of the research -----------
+SCORE: 5 (excellent (9.0 - 10.0))
+----- TEXT:
+- Is the methodology well addressed and valid? Yes.
+- Are experiments documented adequately? Yes.
+- Are the results presented so that you can easily see their significance? No major significance of the results, but they are well-presented.
+- Are the results clearly analysed, explained, and interpreted? Yes.
+- Have the results been critiqued against the literature? Yes.
+- Can the conclusions be derived from the results and the discussions? Yes, except for the point I mentioned earlier.
+----------- Quality of the writing and structure of the paper -----------
+SCORE: 5 (excellent (9.0 - 10.0))
+----- TEXT:
+The writing quality is adequate for a standard scientific paper, including all the core elements of the usual structure of a paper of this kind.
+----------- Decision -----------
+SCORE: 1 (Accept)
+----- TEXT:
+I strongly support the acceptance of this paper.
+----------- Best paper nomination (for the draft paper only) -----------
+SCORE: 1 (Yes)
+----- TEXT:
+Although the results do not have a major significance, the study is incredibly well-documented and structured, establishing a good basis for future work.
+_______________________

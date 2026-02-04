@@ -1,0 +1,12 @@
+# CQ27: Which Annex A control matches 27002:5.15?
+# Category F: Cross-Standard Tracing
+# Expected: A.5.15
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?matchNotation ?matchLabel
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27002/control/5.15> skos:exactMatch ?match .
+  ?match skos:notation ?matchNotation ;
+         skos:prefLabel ?matchLabel .
+}

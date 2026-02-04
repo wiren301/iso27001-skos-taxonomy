@@ -1,0 +1,12 @@
+# CQ09: How should I implement information classification?
+# Category B: Implementation Guidance
+# Expected: ISO 27002 implementation guidance for control 5.12
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?definition
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.12> skos:exactMatch ?iso27002control .
+  ?iso27002control skos:prefLabel ?label ;
+                   skos:definition ?definition .
+}

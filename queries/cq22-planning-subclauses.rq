@@ -1,0 +1,13 @@
+# CQ22: What clauses fall under Planning (6)?
+# Category E: Navigation & Structure
+# Expected: 6.1, 6.2, 6.3
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?notation ?label
+WHERE {
+  ?subclause skos:broader <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6> ;
+             skos:notation ?notation ;
+             skos:prefLabel ?label .
+}
+ORDER BY ?notation

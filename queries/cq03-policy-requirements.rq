@@ -1,0 +1,11 @@
+# CQ03: What must the security policy include?
+# Category A: Requirement Retrieval
+# Expected: Policy requirements a-g
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?definition ?note
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.2> skos:definition ?definition .
+  OPTIONAL { <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.2> skos:note ?note . }
+}

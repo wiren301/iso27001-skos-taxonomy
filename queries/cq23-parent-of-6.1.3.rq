@@ -1,0 +1,12 @@
+# CQ23: What is the parent clause of 6.1.3?
+# Category E: Navigation & Structure
+# Expected: Clause 6.1
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?parentNotation ?parentLabel
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1.3> skos:broader ?parent .
+  ?parent skos:notation ?parentNotation ;
+          skos:prefLabel ?parentLabel .
+}

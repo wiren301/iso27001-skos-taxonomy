@@ -1,0 +1,1550 @@
+{
+  "nodes": [
+    {
+      "id": "theme-5",
+      "label": "Organizational controls",
+      "notation": "Clause 5",
+      "definition": "ISO 27002:2022 Organizational controls",
+      "type": "theme",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/theme/5",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "theme-6",
+      "label": "People controls",
+      "notation": "Clause 6",
+      "definition": "ISO 27002:2022 People controls",
+      "type": "theme",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/theme/6",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "theme-7",
+      "label": "Physical controls",
+      "notation": "Clause 7",
+      "definition": "ISO 27002:2022 Physical controls",
+      "type": "theme",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/theme/7",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "theme-8",
+      "label": "Technological controls",
+      "notation": "Clause 8",
+      "definition": "ISO 27002:2022 Technological controls",
+      "type": "theme",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/theme/8",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.1",
+      "label": "Policies for information security",
+      "notation": "5.1",
+      "definition": "Issue and share directives.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.1",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.10",
+      "label": "Acceptable use of information and other associated assets",
+      "notation": "5.10",
+      "definition": "Define usage rules.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.10",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.11",
+      "label": "Return of assets",
+      "notation": "5.11",
+      "definition": "Retrieve assets at departure.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.11",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.12",
+      "label": "Classification of information",
+      "notation": "5.12",
+      "definition": "Tier data by sensitivity.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.12",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.13",
+      "label": "Labelling of information",
+      "notation": "5.13",
+      "definition": "Apply matching labels.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.13",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.14",
+      "label": "Information transfer",
+      "notation": "5.14",
+      "definition": "Govern data movement.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.14",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.15",
+      "label": "Access control",
+      "notation": "5.15",
+      "definition": "Define entry rules.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.15",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.16",
+      "label": "Identity management",
+      "notation": "5.16",
+      "definition": "Manage user accounts.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.16",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.17",
+      "label": "Authentication information",
+      "notation": "5.17",
+      "definition": "Handle login secrets.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.17",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.18",
+      "label": "Access rights",
+      "notation": "5.18",
+      "definition": "Control admission grants.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.18",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.19",
+      "label": "Information security in supplier relationships",
+      "notation": "5.19",
+      "definition": "Address vendor dangers.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.19",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.2",
+      "label": "Information security roles and responsibilities",
+      "notation": "5.2",
+      "definition": "Assign duties.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.2",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.20",
+      "label": "Addressing information security within supplier agreements",
+      "notation": "5.20",
+      "definition": "Include contract safeguards.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.20",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.21",
+      "label": "Managing information security in the information and communication technology (ICT) supply chain",
+      "notation": "5.21",
+      "definition": "Manage supply chain dangers.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.21",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.22",
+      "label": "Monitoring, review and change management of supplier services",
+      "notation": "5.22",
+      "definition": "Review vendor work.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.22",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.23",
+      "label": "Information security for use of cloud services",
+      "notation": "5.23",
+      "definition": "Govern cloud usage.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.23",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.24",
+      "label": "Information security incident management planning and preparation",
+      "notation": "5.24",
+      "definition": "Pre-plan breach response.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.24",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.25",
+      "label": "Assessment and decision on information security events",
+      "notation": "5.25",
+      "definition": "Classify anomalies.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.25",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.26",
+      "label": "Response to information security incidents",
+      "notation": "5.26",
+      "definition": "Act on breaches.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.26",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.27",
+      "label": "Learning from information security incidents",
+      "notation": "5.27",
+      "definition": "Apply breach lessons.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.27",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.28",
+      "label": "Collection of evidence",
+      "notation": "5.28",
+      "definition": "Standardize forensics.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.28",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.29",
+      "label": "Information security during disruption",
+      "notation": "5.29",
+      "definition": "Preserve safety through crises.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.29",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.3",
+      "label": "Segregation of duties",
+      "notation": "5.3",
+      "definition": "Distribute clashing tasks.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.3",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.30",
+      "label": "ICT readiness for business continuity",
+      "notation": "5.30",
+      "definition": "Match tech resilience to needs.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.30",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.31",
+      "label": "Legal, statutory, regulatory and contractual requirements",
+      "notation": "5.31",
+      "definition": "Note legal duties.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.31",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.32",
+      "label": "Intellectual property rights",
+      "notation": "5.32",
+      "definition": "Shield IP assets.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.32",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.33",
+      "label": "Protection of records",
+      "notation": "5.33",
+      "definition": "Guard stored records.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.33",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.34",
+      "label": "Privacy and protection of personal identifiable information (PII)",
+      "notation": "5.34",
+      "definition": "Honor privacy rules.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.34",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.35",
+      "label": "Independent review of information security",
+      "notation": "5.35",
+      "definition": "Conduct independent reviews.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.35",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.36",
+      "label": "Compliance with policies, rules and standards for information security",
+      "notation": "5.36",
+      "definition": "Verify directive adherence.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.36",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.37",
+      "label": "Documented operating procedures",
+      "notation": "5.37",
+      "definition": "Keep procedure docs.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.37",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.4",
+      "label": "Management responsibilities",
+      "notation": "5.4",
+      "definition": "Mandate directive adherence.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.4",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.5",
+      "label": "Contact with authorities",
+      "notation": "5.5",
+      "definition": "Build regulator rapport.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.5",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.6",
+      "label": "Contact with special interest groups",
+      "notation": "5.6",
+      "definition": "Engage peer networks.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.6",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.7",
+      "label": "Threat intelligence",
+      "notation": "5.7",
+      "definition": "Gather threat data.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.7",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.8",
+      "label": "Information security in project management",
+      "notation": "5.8",
+      "definition": "Weave defenses through work.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.8",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.5.9",
+      "label": "Inventory of information and other associated assets",
+      "notation": "5.9",
+      "definition": "Maintain asset catalogs.",
+      "type": "control",
+      "theme": "5",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.9",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.1",
+      "label": "Screening",
+      "notation": "6.1",
+      "definition": "Screen personnel.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.1",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.2",
+      "label": "Terms and conditions of employment",
+      "notation": "6.2",
+      "definition": "Document job terms.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.2",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.3",
+      "label": "Information security awareness, education and training",
+      "notation": "6.3",
+      "definition": "Train staff continuously.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.3",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.4",
+      "label": "Disciplinary process",
+      "notation": "6.4",
+      "definition": "Handle breaches formally.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.4",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.5",
+      "label": "Responsibilities after termination or change of employment",
+      "notation": "6.5",
+      "definition": "Specify departure duties.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.5",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.6",
+      "label": "Confidentiality or non-disclosure agreements",
+      "notation": "6.6",
+      "definition": "Formalize secrecy pledges.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.6",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.7",
+      "label": "Remote working",
+      "notation": "6.7",
+      "definition": "Secure remote work.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.7",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.6.8",
+      "label": "Information security event reporting",
+      "notation": "6.8",
+      "definition": "Enable anomaly reporting.",
+      "type": "control",
+      "theme": "6",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.6.8",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.1",
+      "label": "Physical security perimeters",
+      "notation": "7.1",
+      "definition": "Mark protected zones.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.1",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.10",
+      "label": "Storage media",
+      "notation": "7.10",
+      "definition": "Manage media lifecycle.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.10",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.11",
+      "label": "Supporting utilities",
+      "notation": "7.11",
+      "definition": "Handle power outages.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.11",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.12",
+      "label": "Cabling security",
+      "notation": "7.12",
+      "definition": "Shield wiring.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.12",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.13",
+      "label": "Equipment maintenance",
+      "notation": "7.13",
+      "definition": "Maintain gear properly.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.13",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.14",
+      "label": "Secure disposal or re-use of equipment",
+      "notation": "7.14",
+      "definition": "Sanitize storage before reuse.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.14",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.2",
+      "label": "Physical entry",
+      "notation": "7.2",
+      "definition": "Manage doorways.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.2",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.3",
+      "label": "Securing offices, rooms and facilities",
+      "notation": "7.3",
+      "definition": "Design workspace protection.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.3",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.4",
+      "label": "Physical security monitoring",
+      "notation": "7.4",
+      "definition": "Watch for intruders.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.4",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.5",
+      "label": "Protecting against physical and environmental threats",
+      "notation": "7.5",
+      "definition": "Mitigate environmental hazards.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.5",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.6",
+      "label": "Working in secure areas",
+      "notation": "7.6",
+      "definition": "Manage secure space work.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.6",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.7",
+      "label": "Clear desk and clear screen",
+      "notation": "7.7",
+      "definition": "Enforce clearing rules.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.7",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.8",
+      "label": "Equipment siting and protection",
+      "notation": "7.8",
+      "definition": "Position gear strategically.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.8",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.7.9",
+      "label": "Security of assets off-premises",
+      "notation": "7.9",
+      "definition": "Shield portable gear.",
+      "type": "control",
+      "theme": "7",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.7.9",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.1",
+      "label": "User endpoint devices",
+      "notation": "8.1",
+      "definition": "Safeguard device data.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.1",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.10",
+      "label": "Information deletion",
+      "notation": "8.10",
+      "definition": "Purge old data.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.10",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.11",
+      "label": "Data masking",
+      "notation": "8.11",
+      "definition": "Mask sensitive data.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.11",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.12",
+      "label": "Data leakage prevention",
+      "notation": "8.12",
+      "definition": "Block data leakage.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.12",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.13",
+      "label": "Information backup",
+      "notation": "8.13",
+      "definition": "Keep tested copies.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.13",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.14",
+      "label": "Redundancy of information processing facilities",
+      "notation": "8.14",
+      "definition": "Include backup capacity.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.14",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.15",
+      "label": "Logging",
+      "notation": "8.15",
+      "definition": "Capture event trails.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.15",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.16",
+      "label": "Monitoring activities",
+      "notation": "8.16",
+      "definition": "Watch for anomalies.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.16",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.17",
+      "label": "Clock synchronization",
+      "notation": "8.17",
+      "definition": "Sync timestamps.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.17",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.18",
+      "label": "Use of privileged utility programs",
+      "notation": "8.18",
+      "definition": "Restrict admin tools.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.18",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.19",
+      "label": "Installation of software on operational systems",
+      "notation": "8.19",
+      "definition": "Secure live deployments.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.19",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.2",
+      "label": "Privileged access rights",
+      "notation": "8.2",
+      "definition": "Curb admin access.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.2",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.20",
+      "label": "Networks security",
+      "notation": "8.20",
+      "definition": "Harden network gear.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.20",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.21",
+      "label": "Security of network services",
+      "notation": "8.21",
+      "definition": "Define service safety.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.21",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.22",
+      "label": "Segregation of networks",
+      "notation": "8.22",
+      "definition": "Segment networks.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.22",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.23",
+      "label": "Web filtering",
+      "notation": "8.23",
+      "definition": "Restrict browsing.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.23",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.24",
+      "label": "Use of cryptography",
+      "notation": "8.24",
+      "definition": "Formalize encryption rules.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.24",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.25",
+      "label": "Secure development life cycle",
+      "notation": "8.25",
+      "definition": "Bake in dev security.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.25",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.26",
+      "label": "Application security requirements",
+      "notation": "8.26",
+      "definition": "Capture protection needs early.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.26",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.27",
+      "label": "Secure system architecture and engineering principles",
+      "notation": "8.27",
+      "definition": "Follow secure architecture.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.27",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.28",
+      "label": "Secure coding",
+      "notation": "8.28",
+      "definition": "Author safe code.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.28",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.29",
+      "label": "Security testing in development and acceptance",
+      "notation": "8.29",
+      "definition": "Embed safety checks.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.29",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.3",
+      "label": "Information access restriction",
+      "notation": "8.3",
+      "definition": "Follow admission rules.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.3",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.30",
+      "label": "Outsourced development",
+      "notation": "8.30",
+      "definition": "Govern third-party coding.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.30",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.31",
+      "label": "Separation of development, test and production environments",
+      "notation": "8.31",
+      "definition": "Wall off build phases.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.31",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.32",
+      "label": "Change management",
+      "notation": "8.32",
+      "definition": "Govern modifications.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.32",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.33",
+      "label": "Test information",
+      "notation": "8.33",
+      "definition": "Curate test data.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.33",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.34",
+      "label": "Protection of information systems during audit testing",
+      "notation": "8.34",
+      "definition": "Minimize audit disruption.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.34",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.4",
+      "label": "Access to source code",
+      "notation": "8.4",
+      "definition": "Control code access.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.4",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.5",
+      "label": "Secure authentication",
+      "notation": "8.5",
+      "definition": "Match verification to sensitivity.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.5",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.6",
+      "label": "Capacity management",
+      "notation": "8.6",
+      "definition": "Monitor resource usage.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.6",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.7",
+      "label": "Protection against malware",
+      "notation": "8.7",
+      "definition": "Fight malicious software.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.7",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.8",
+      "label": "Management of technical vulnerabilities",
+      "notation": "8.8",
+      "definition": "Track and fix weaknesses.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.8",
+      "inScheme": "iso27002:ControlScheme"
+    },
+    {
+      "id": "control-A.8.9",
+      "label": "Configuration management",
+      "notation": "8.9",
+      "definition": "Standardize settings.",
+      "type": "control",
+      "theme": "8",
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.8.9",
+      "inScheme": "iso27002:ControlScheme"
+    }
+  ],
+  "links": [
+    {
+      "source": "theme-5",
+      "target": "control-A.5.10",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.20",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.30",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.10",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.10",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.20",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.30",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.1",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.11",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.12",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.13",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.14",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.15",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.16",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.17",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.18",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.19",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.2",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.21",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.22",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.23",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.24",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.25",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.26",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.27",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.28",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.29",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.3",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.31",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.32",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.33",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.34",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.35",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.36",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.37",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.4",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.5",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.6",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.7",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.8",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-5",
+      "target": "control-A.5.9",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.1",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.2",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.3",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.4",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.5",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.6",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.7",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-6",
+      "target": "control-A.6.8",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.1",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.11",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.12",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.13",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.14",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.2",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.3",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.4",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.5",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.6",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.7",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.8",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-7",
+      "target": "control-A.7.9",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.1",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.11",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.12",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.13",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.14",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.15",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.16",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.17",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.18",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.19",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.2",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.21",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.22",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.23",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.24",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.25",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.26",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.27",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.28",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.29",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.3",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.31",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.32",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.33",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.34",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.4",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.5",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.6",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.7",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.8",
+      "type": "narrower"
+    },
+    {
+      "source": "theme-8",
+      "target": "control-A.8.9",
+      "type": "narrower"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "file": "output/iso-security.ttl",
+      "type": "Turtle"
+    },
+    "scheme": {
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/ControlScheme",
+      "label": "ISO/IEC 27002:2022 Information Security Controls",
+      "description": "93 controls organized in 4 themes"
+    },
+    "stats": {
+      "totalControls": 93,
+      "totalThemes": 4,
+      "totalRelationships": 93
+    }
+  }
+}

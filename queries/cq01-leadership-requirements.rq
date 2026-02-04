@@ -1,0 +1,10 @@
+# CQ01: What are the requirements for leadership commitment?
+# Category A: Requirement Retrieval
+# Expected: "Top management shall demonstrate leadership and commitment..."
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?definition
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.1> skos:definition ?definition .
+}

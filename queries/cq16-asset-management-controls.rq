@@ -1,0 +1,13 @@
+# CQ16: Which controls address asset management?
+# Category C: Control Selection
+# Expected: Controls related to asset management capability
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?notation ?label
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27002/attribute/ops_capability/asset_management> skos:member ?control .
+  ?control skos:notation ?notation ;
+           skos:prefLabel ?label .
+}
+ORDER BY ?notation

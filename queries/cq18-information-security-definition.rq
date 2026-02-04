@@ -1,0 +1,11 @@
+# CQ18: What is "information security"?
+# Category D: Vocabulary Understanding
+# Expected: "preservation of confidentiality, integrity and availability"
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?definition
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.28> skos:prefLabel ?label ;
+                     skos:definition ?definition .
+}

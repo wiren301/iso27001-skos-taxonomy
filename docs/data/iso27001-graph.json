@@ -1,0 +1,779 @@
+{
+  "nodes": [
+    {
+      "id": "clause-1",
+      "label": "Scope",
+      "notation": "1",
+      "definition": "Framework creation and enhancement guidelines for organizational data protection.",
+      "type": "sub-clause",
+      "mainClause": "1",
+      "depth": 1,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-2",
+      "label": "Normative references",
+      "notation": "2",
+      "definition": "Supporting documentation citations.",
+      "type": "sub-clause",
+      "mainClause": "2",
+      "depth": 1,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-3",
+      "label": "Terms and definitions",
+      "notation": "3",
+      "definition": "Vocabulary from companion standard applies.",
+      "type": "sub-clause",
+      "mainClause": "3",
+      "depth": 1,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-4",
+      "label": "4. Context of the organization",
+      "notation": "4",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "4",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/4",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-4.1",
+      "label": "Understanding the organization and its context",
+      "notation": "4.1",
+      "definition": "Map internal and external shaping factors.",
+      "type": "sub-clause",
+      "mainClause": "4",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/4.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-4.2",
+      "label": "Understanding the needs and expectations of interested parties",
+      "notation": "4.2",
+      "definition": "Identify parties with stakes.",
+      "type": "sub-clause",
+      "mainClause": "4",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/4.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-4.3",
+      "label": "Determining the scope of the information security management system",
+      "notation": "4.3",
+      "definition": "Define framework scope.",
+      "type": "sub-clause",
+      "mainClause": "4",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/4.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-4.4",
+      "label": "Information security management system",
+      "notation": "4.4",
+      "definition": "Build and sustain the framework.",
+      "type": "sub-clause",
+      "mainClause": "4",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/4.4",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-5",
+      "label": "5. Leadership",
+      "notation": "5",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "5",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-5.1",
+      "label": "Leadership and commitment",
+      "notation": "5.1",
+      "definition": "Executives champion the framework.",
+      "type": "sub-clause",
+      "mainClause": "5",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-5.2",
+      "label": "Policy",
+      "notation": "5.2",
+      "definition": "Craft guiding directives.",
+      "type": "sub-clause",
+      "mainClause": "5",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-5.3",
+      "label": "Organizational roles, responsibilities and authorities",
+      "notation": "5.3",
+      "definition": "Assign accountabilities.",
+      "type": "sub-clause",
+      "mainClause": "5",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/5.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6",
+      "label": "6. Planning",
+      "notation": "6",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "6",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6.1",
+      "label": "Actions to address risks and opportunities",
+      "notation": "6.1",
+      "definition": "",
+      "type": "sub-clause",
+      "mainClause": "6",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6.1.1",
+      "label": "General",
+      "notation": "6.1.1",
+      "definition": "Map opportunities and dangers.",
+      "type": "sub-clause",
+      "mainClause": "6",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6.1.2",
+      "label": "Information security risk assessment",
+      "notation": "6.1.2",
+      "definition": "Formalize danger evaluation methods.",
+      "type": "sub-clause",
+      "mainClause": "6",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6.1.3",
+      "label": "Information security risk treatment",
+      "notation": "6.1.3",
+      "definition": "Handle threats.",
+      "type": "sub-clause",
+      "mainClause": "6",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6.2",
+      "label": "Information security objectives and planning to achieve them",
+      "notation": "6.2",
+      "definition": "Set protection targets.",
+      "type": "sub-clause",
+      "mainClause": "6",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-6.3",
+      "label": "Planning of changes",
+      "notation": "6.3",
+      "definition": "Follow structured change protocols.",
+      "type": "sub-clause",
+      "mainClause": "6",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7",
+      "label": "7. Support",
+      "notation": "7",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "7",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.1",
+      "label": "Resources",
+      "notation": "7.1",
+      "definition": "Secure needed assets.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.2",
+      "label": "Competence",
+      "notation": "7.2",
+      "definition": "Confirm worker capabilities.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.3",
+      "label": "Awareness",
+      "notation": "7.3",
+      "definition": "Inform staff.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.4",
+      "label": "Communication",
+      "notation": "7.4",
+      "definition": "Orchestrate messaging.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.4",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.5",
+      "label": "Documented information",
+      "notation": "7.5",
+      "definition": "",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.5",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.5.1",
+      "label": "General",
+      "notation": "7.5.1",
+      "definition": "Include mandated records.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.5.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.5.2",
+      "label": "Creating and updating",
+      "notation": "7.5.2",
+      "definition": "Format docs correctly.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.5.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-7.5.3",
+      "label": "Control of documented information",
+      "notation": "7.5.3",
+      "definition": "Safeguard and manage records.",
+      "type": "sub-clause",
+      "mainClause": "7",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/7.5.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-8",
+      "label": "8. Operation",
+      "notation": "8",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "8",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/8",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-8.1",
+      "label": "Operational planning and control",
+      "notation": "8.1",
+      "definition": "Orchestrate compliant workflows.",
+      "type": "sub-clause",
+      "mainClause": "8",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/8.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-8.2",
+      "label": "Information security risk assessment",
+      "notation": "8.2",
+      "definition": "Execute danger evaluations.",
+      "type": "sub-clause",
+      "mainClause": "8",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/8.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-8.3",
+      "label": "Information security risk treatment",
+      "notation": "8.3",
+      "definition": "Execute threat mitigation.",
+      "type": "sub-clause",
+      "mainClause": "8",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/8.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9",
+      "label": "9. Performance evaluation",
+      "notation": "9",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "9",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.1",
+      "label": "Monitoring, measurement, analysis and evaluation",
+      "notation": "9.1",
+      "definition": "Define tracking metrics.",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.2",
+      "label": "Internal audit",
+      "notation": "9.2",
+      "definition": "",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.2.1",
+      "label": "General",
+      "notation": "9.2.1",
+      "definition": "Run periodic self-checks.",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.2.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.2.2",
+      "label": "Internal audit programme",
+      "notation": "9.2.2",
+      "definition": "Build assessment program.",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.2.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.3",
+      "label": "Management review",
+      "notation": "9.3",
+      "definition": "",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.3.1",
+      "label": "General",
+      "notation": "9.3.1",
+      "definition": "Examine framework fitness.",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.3.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.3.2",
+      "label": "Management review inputs",
+      "notation": "9.3.2",
+      "definition": "Address findings and prospects.",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.3.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-9.3.3",
+      "label": "Management review results",
+      "notation": "9.3.3",
+      "definition": "Yield enhancement decisions.",
+      "type": "sub-clause",
+      "mainClause": "9",
+      "depth": 3,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/9.3.3",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-10",
+      "label": "10. Improvement",
+      "notation": "10",
+      "definition": "",
+      "type": "main-clause",
+      "mainClause": "10",
+      "isTopConcept": true,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/10",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-10.1",
+      "label": "Continual improvement",
+      "notation": "10.1",
+      "definition": "Persistently advance quality.",
+      "type": "sub-clause",
+      "mainClause": "10",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/10.1",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-10.2",
+      "label": "Nonconformity and corrective action",
+      "notation": "10.2",
+      "definition": "Tackle deficiencies systematically.",
+      "type": "sub-clause",
+      "mainClause": "10",
+      "depth": 2,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/10.2",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.28",
+      "label": "information security",
+      "notation": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.28",
+      "definition": "CIA triad preservation",
+      "type": "sub-clause",
+      "mainClause": "https://wiren301",
+      "depth": 4,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.28",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.41",
+      "label": "management system",
+      "notation": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.41",
+      "definition": "governance ecosystem",
+      "type": "sub-clause",
+      "mainClause": "https://wiren301",
+      "depth": 4,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.41",
+      "inScheme": "iso27001:ISMSScheme"
+    },
+    {
+      "id": "clause-https://wiren301.github.io/iso27001-skos-taxonomy/27002/control/5.37",
+      "label": "Documented operating procedures",
+      "notation": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/control/5.37",
+      "definition": "Keep procedure docs.",
+      "type": "sub-clause",
+      "mainClause": "https://wiren301",
+      "depth": 4,
+      "isTopConcept": false,
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27002/control/5.37",
+      "inScheme": "iso27001:ISMSScheme"
+    }
+  ],
+  "links": [
+    {
+      "source": "clause-10",
+      "target": "clause-10.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-10",
+      "target": "clause-10.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-4",
+      "target": "clause-4.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-4",
+      "target": "clause-4.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-4",
+      "target": "clause-4.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-4",
+      "target": "clause-4.4",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-5",
+      "target": "clause-5.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-5",
+      "target": "clause-5.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-5",
+      "target": "clause-5.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-6.1",
+      "target": "clause-6.1.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-6.1",
+      "target": "clause-6.1.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-6.1",
+      "target": "clause-6.1.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-6",
+      "target": "clause-6.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-6",
+      "target": "clause-6.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7",
+      "target": "clause-7.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7",
+      "target": "clause-7.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7",
+      "target": "clause-7.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7",
+      "target": "clause-7.4",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7.5",
+      "target": "clause-7.5.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7.5",
+      "target": "clause-7.5.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7.5",
+      "target": "clause-7.5.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-8",
+      "target": "clause-8.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-8",
+      "target": "clause-8.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-8",
+      "target": "clause-8.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9",
+      "target": "clause-9.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9.2",
+      "target": "clause-9.2.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9.2",
+      "target": "clause-9.2.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9.3",
+      "target": "clause-9.3.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9.3",
+      "target": "clause-9.3.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9.3",
+      "target": "clause-9.3.3",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9",
+      "target": "clause-9.2",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-6",
+      "target": "clause-6.1",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-7",
+      "target": "clause-7.5",
+      "type": "narrower"
+    },
+    {
+      "source": "clause-9",
+      "target": "clause-9.3",
+      "type": "narrower"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "file": "output/iso-security.ttl",
+      "type": "Turtle"
+    },
+    "scheme": {
+      "uri": "https://wiren301.github.io/iso27001-skos-taxonomy/27001/ISMSScheme",
+      "label": "ISO/IEC 27001:2022 ISMS Requirements",
+      "description": "Information security management system requirements organized in clauses 4-10"
+    },
+    "stats": {
+      "totalClauses": 47,
+      "mainClauses": 7,
+      "totalRelationships": 34
+    }
+  },
+  "colors": {
+    "4": {
+      "label": "Context of the organization",
+      "color": "#da3633"
+    },
+    "5": {
+      "label": "Leadership",
+      "color": "#f0883e"
+    },
+    "6": {
+      "label": "Planning",
+      "color": "#d29922"
+    },
+    "7": {
+      "label": "Support",
+      "color": "#3fb950"
+    },
+    "8": {
+      "label": "Operation",
+      "color": "#58a6ff"
+    },
+    "9": {
+      "label": "Performance evaluation",
+      "color": "#a371f7"
+    },
+    "10": {
+      "label": "Improvement",
+      "color": "#f778ba"
+    }
+  }
+}

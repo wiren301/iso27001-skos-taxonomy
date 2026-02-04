@@ -1,0 +1,16 @@
+# CQ24: What are the main ISMS clauses?
+# Category E: Navigation & Structure
+# Expected: Clauses 4, 5, 6, 7, 8, 9, 10 (top-level)
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?notation ?label
+WHERE {
+  ?clause skos:inScheme <https://wiren301.github.io/iso27001-skos-taxonomy/27001/ISMSScheme> ;
+          skos:notation ?notation ;
+          skos:prefLabel ?label .
+  FILTER NOT EXISTS { ?clause skos:broader ?parent }
+  FILTER(REGEX(?notation, "^[0-9]+$"))
+}
+ORDER BY xsd:integer(?notation)

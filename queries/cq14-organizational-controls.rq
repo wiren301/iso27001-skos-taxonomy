@@ -1,0 +1,10 @@
+# CQ14: Which controls are organizational?
+# Category C: Control Selection
+# Expected: 37 organizational controls
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT (COUNT(?control) AS ?count)
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/collection/organizational> skos:member ?control .
+}

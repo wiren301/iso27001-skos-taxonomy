@@ -1,0 +1,86 @@
+namespaces:
+  base: "https://wiren301.github.io/iso27001-skos-taxonomy/"
+  iso27000: "https://wiren301.github.io/iso27001-skos-taxonomy/27000/"
+  iso27001: "https://wiren301.github.io/iso27001-skos-taxonomy/27001/"
+  iso27002: "https://wiren301.github.io/iso27001-skos-taxonomy/27002/"
+  iso31000: "https://wiren301.github.io/iso27001-skos-taxonomy/31000/"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  dct: "http://purl.org/dc/terms/"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+sources:
+  iso27000:
+    path: "schemas/ISO27000_UNIFIED.xlsx"
+    sheet: "ISO27000_Vocabulary"
+    scheme_uri: "iso27000:VocabularyScheme"
+    scheme_label: "ISO/IEC 27000:2018 Information Security Vocabulary"
+    concept_prefix: "iso27000:term/"
+    mappings:
+      notation: "Concept_ID"
+      prefLabel: "Label"
+      definition: "Definition"
+      parent: "Parent_ID"
+      theme: "Theme"
+      notes:
+        - "Note_1"
+        - "Note_2"
+        - "Note_3"
+
+  iso27001:
+    path: "schemas/ISO27001_UNIFIED.xlsx"
+    sheet: "ISO27001_Requirements"
+    scheme_uri: "iso27001:ISMSScheme"
+    scheme_label: "ISO/IEC 27001:2022 ISMS Requirements"
+    annex_scheme_uri: "iso27001:AnnexAScheme"
+    annex_scheme_label: "ISO/IEC 27001:2022 Annex A Controls"
+    concept_prefix: "iso27001:clause/"
+    control_prefix: "iso27001:control/"
+    mappings:
+      notation: "Concept_ID"
+      prefLabel: "Label"
+      definition: "Definition"
+      parent: "Parent_ID"
+      theme: "Theme"
+      notes:
+        - "Note_1"
+        - "Note_2"
+        - "Note_3"
+
+  iso27002:
+    path: "schemas/ISO27002_UNIFIED.xlsx"
+    sheet: "ISO27002_Controls"
+    scheme_uri: "iso27002:ControlsScheme"
+    scheme_label: "ISO/IEC 27002:2022 Information Security Controls"
+    concept_prefix: "iso27002:control/"
+    mappings:
+      notation: "Concept_ID"
+      prefLabel: "Label"
+      definition: "Definition"
+      parent: "Parent_ID"
+      theme: "Theme"
+      notes:
+        - "Note_1"
+        - "Note_2"
+        - "Note_3"
+
+  iso31000:
+    path: "schemas/ISO31000_2018_VERBATIM_COMPLETE.xlsx"
+    sheet: 0
+    scheme_uri: "iso31000:RiskScheme"
+    scheme_label: "ISO 31000:2018 Risk Management"
+    concept_prefix: "iso31000:concept/"
+
+output:
+  directory: "output"
+  formats:
+    - turtle
+    - jsonld
+  unified_file: "iso-security"
+
+metadata:
+  creator: "ISO 27001 SKOS Taxonomy Project"
+  publisher: "wiren301"
+  license: "https://creativecommons.org/licenses/by/4.0/"
+  version: "1.0.0"

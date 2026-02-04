@@ -1,0 +1,11 @@
+# CQ05: What are the risk treatment requirements?
+# Category A: Requirement Retrieval
+# Expected: Risk treatment process requirements
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?definition ?note
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1.3> skos:definition ?definition .
+  OPTIONAL { <https://wiren301.github.io/iso27001-skos-taxonomy/27001/clause/6.1.3> skos:note ?note . }
+}

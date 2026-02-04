@@ -1,0 +1,13 @@
+# CQ12: Which controls protect confidentiality?
+# Category C: Control Selection
+# Expected: List of controls tagged with CIA=Confidentiality
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?notation ?label
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27002/attribute/cia/confidentiality> skos:member ?control .
+  ?control skos:notation ?notation ;
+           skos:prefLabel ?label .
+}
+ORDER BY ?notation

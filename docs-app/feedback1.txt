@@ -1,0 +1,15 @@
+Overall impression	This paper presents a machine-readable SKOS taxonomy for ISO/IEC 27001:2022. The authors convert the standard’s clauses, Annex A controls, ISO 27002 guidance, and ISO 27000 vocabulary into a single queryable knowledge base. The main contribution is showing that SKOS is a practical and maintainable alternative to earlier OWL-based models, which were found to be complex and hard to update. The taxonomy is well validated using competency questions and SPARQL queries, and the artifact is openly available. Overall, the paper addresses an important practical problem and provides a solid and useful technical solution.
+Major strong points	1. Focuses on the current (2022) version of ISO/IEC 27001
+2. Clear and well-motivated choice of SKOS instead of OWL
+3. Good coverage of clauses, controls, and vocabulary
+4. Strong and systematic validation using competency questions
+5. Openly available data, code, and visual tools
+6. Clearly relevant for security and compliance practitioners
+Major weak points	1. Competency questions were designed by the author, not practitioners (understandable due to time constraints)
+2. No user study to show real-world use by auditors or compliance teams (understandable due to time constraints)
+3. Manual extraction from PDFs may introduce minor errors.
+4. Adding a few more concrete examples or data points would strengthen the arguments.
+Overall quality of the research	The methodology is well explained and technically sound. The extraction, modeling, and validation steps are clearly documented and reproducible. Results are easy to understand and directly support the research questions. The conclusions are justified and realistic, and limitations are honestly discussed.
+Quality of the writing and structure of the paper	The paper is well structured and easy to follow. The abstract clearly summarizes the work. Figures and tables are helpful and well explained. The research goals are clear, the background is sufficient, and the language is clear and readable.
+Decision	
+1: Accept

@@ -1,0 +1,11 @@
+# CQ10: What is the purpose of control A.5.1?
+# Category B: Implementation Guidance
+# Expected: Policy control definition from ISO 27002
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?definition
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27002/control/5.1> skos:prefLabel ?label ;
+                       skos:definition ?definition .
+}

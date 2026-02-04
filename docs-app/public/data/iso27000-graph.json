@@ -1,0 +1,548 @@
+{
+  "nodes": [
+    {
+      "id": "27000-3.1",
+      "label": "access control",
+      "definition": "gatekeeping mechanisms for resource usage",
+      "notation": "3.1",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.1",
+      "label": "confidentiality",
+      "definition": "gatekeeping mechanisms for resource usage",
+      "notation": "3.1",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.11",
+      "label": "conformity",
+      "definition": "compliance state",
+      "notation": "3.11",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.12",
+      "label": "consequence",
+      "definition": "key concept",
+      "notation": "3.12",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.13",
+      "label": "continual improvement",
+      "definition": "quality pursuit",
+      "notation": "3.13",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.14",
+      "label": "control",
+      "definition": "key concept",
+      "notation": "3.14",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.15",
+      "label": "control objective",
+      "definition": "safeguard intent",
+      "notation": "3.15",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.16",
+      "label": "correction",
+      "definition": "flaw fix",
+      "notation": "3.16",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.17",
+      "label": "corrective action",
+      "definition": "root cause elimination",
+      "notation": "3.17",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.18",
+      "label": "derived measure",
+      "definition": "computed metric",
+      "notation": "3.18",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.19",
+      "label": "documented information",
+      "definition": "preserved records",
+      "notation": "3.19",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.2",
+      "label": "attack",
+      "definition": "hostile action ",
+      "notation": "3.2",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.2",
+      "label": "effectiveness",
+      "definition": "hostile action targeting assets",
+      "notation": "3.2",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.21",
+      "label": "event",
+      "definition": "happening",
+      "notation": "3.21",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.22",
+      "label": "external context",
+      "definition": "external influe",
+      "notation": "3.22",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.23",
+      "label": "governance of information security",
+      "definition": "protection oversight structure",
+      "notation": "3.23",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.24",
+      "label": "governing body",
+      "definition": "accountability holders",
+      "notation": "3.24",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.25",
+      "label": "indicator",
+      "definition": "status gauge",
+      "notation": "3.25",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.26",
+      "label": "information need",
+      "definition": "knowledge gaps to fill",
+      "notation": "3.26",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.27",
+      "label": "information processing facilities",
+      "definition": "data handling venues",
+      "notation": "3.27",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.28",
+      "label": "information security",
+      "definition": "CIA triad preservation",
+      "notation": "3.28",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.29",
+      "label": "information security continuity",
+      "definition": "uninterrupted protection",
+      "notation": "3.29",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.3",
+      "label": "audit",
+      "definition": "structured compliance examination",
+      "notation": "3.3",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.3",
+      "label": "information security event",
+      "definition": "structured compliance examination",
+      "notation": "3.3",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.31",
+      "label": "information security incident",
+      "definition": "damaging anomaly",
+      "notation": "3.31",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.32",
+      "label": "information security incident management",
+      "definition": "breach handling framework",
+      "notation": "3.32",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.33",
+      "label": "information security management system (ISMS) professional",
+      "definition": "framework specialist",
+      "notation": "3.33",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.34",
+      "label": "information sharing community",
+      "definition": "data pooling coalition",
+      "notation": "3.34",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.35",
+      "label": "information system",
+      "definition": "tech ecosystem",
+      "notation": "3.35",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.36",
+      "label": "integrity",
+      "definition": "precision plus totality",
+      "notation": "3.36",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.37",
+      "label": "interested party (preferred term) / stakeholder (admitted term)",
+      "definition": "affected parties",
+      "notation": "3.37",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.38",
+      "label": "internal context",
+      "definition": "internal influe",
+      "notation": "3.38",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.39",
+      "label": "level of risk",
+      "definition": "danger magnitude",
+      "notation": "3.39",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.4",
+      "label": "audit scope",
+      "definition": "review limits",
+      "notation": "3.4",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.4",
+      "label": "likelihood",
+      "definition": "review limits",
+      "notation": "3.4",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.41",
+      "label": "management system",
+      "definition": "governance ecosystem",
+      "notation": "3.41",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.42",
+      "label": "measure",
+      "definition": "assessed value",
+      "notation": "3.42",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.43",
+      "label": "measurement",
+      "definition": "valuation act",
+      "notation": "3.43",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.44",
+      "label": "measurement function",
+      "definition": "metric formula",
+      "notation": "3.44",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.45",
+      "label": "measurement method",
+      "definition": "quantification technique",
+      "notation": "3.45",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.46",
+      "label": "monitoring",
+      "definition": "key concept",
+      "notation": "3.46",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.47",
+      "label": "nonconformity",
+      "definition": "key concept",
+      "notation": "3.47",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.48",
+      "label": "non-repudiation",
+      "definition": "action attribution proof",
+      "notation": "3.48",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.49",
+      "label": "objective",
+      "definition": "key concept",
+      "notation": "3.49",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.5",
+      "label": "authentication",
+      "definition": "identity claim validation",
+      "notation": "3.5",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.5",
+      "label": "organization",
+      "definition": "identity claim validation",
+      "notation": "3.5",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.51",
+      "label": "outsource",
+      "definition": "third-party delegation",
+      "notation": "3.51",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.52",
+      "label": "performance",
+      "definition": "output metrics",
+      "notation": "3.52",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.53",
+      "label": "policy",
+      "definition": "leadership directive",
+      "notation": "3.53",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.54",
+      "label": "process",
+      "definition": "workflow sequence",
+      "notation": "3.54",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.55",
+      "label": "reliability",
+      "definition": "steady operation",
+      "notation": "3.55",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.56",
+      "label": "requirement",
+      "definition": "key concept",
+      "notation": "3.56",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.57",
+      "label": "residual risk",
+      "definition": "leftover exposu",
+      "notation": "3.57",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.58",
+      "label": "review",
+      "definition": "fitness examination",
+      "notation": "3.58",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.59",
+      "label": "review object",
+      "definition": "examination subject",
+      "notation": "3.59",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.6",
+      "label": "authenticity",
+      "definition": "genuineness confirmation",
+      "notation": "3.6",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.6",
+      "label": "review objective",
+      "definition": "genuineness confirmation",
+      "notation": "3.6",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.61",
+      "label": "risk",
+      "definition": "goal exposure",
+      "notation": "3.61",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.62",
+      "label": "risk acceptance",
+      "definition": "exposure tolerance",
+      "notation": "3.62",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.63",
+      "label": "risk analysis",
+      "definition": "danger examination",
+      "notation": "3.63",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.64",
+      "label": "risk assessment",
+      "definition": "comprehensive danger review",
+      "notation": "3.64",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.65",
+      "label": "risk communication and consultation",
+      "definition": "stakeholder danger dialogue",
+      "notation": "3.65",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.66",
+      "label": "risk criteria",
+      "definition": "danger thresholds",
+      "notation": "3.66",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.67",
+      "label": "risk evaluation",
+      "definition": "danger acceptability judgment",
+      "notation": "3.67",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.68",
+      "label": "risk identification",
+      "definition": "danger discovery",
+      "notation": "3.68",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.69",
+      "label": "risk management",
+      "definition": "danger oversight",
+      "notation": "3.69",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.7",
+      "label": "availability",
+      "definition": "ready when needed",
+      "notation": "3.7",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.7",
+      "label": "risk management process",
+      "definition": "ready when needed",
+      "notation": "3.7",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.71",
+      "label": "risk owner",
+      "definition": "danger accounta",
+      "notation": "3.71",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.72",
+      "label": "risk treatment",
+      "definition": "danger mitigation",
+      "notation": "3.72",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.73",
+      "label": "security implementation standard",
+      "definition": "approved implementation guide",
+      "notation": "3.73",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.74",
+      "label": "threat",
+      "definition": "harm potential",
+      "notation": "3.74",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.75",
+      "label": "top management",
+      "definition": "executive leadership",
+      "notation": "3.75",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.76",
+      "label": "trusted information communication entity",
+      "definition": "trusted intermediary",
+      "notation": "3.76",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.77",
+      "label": "vulnerability",
+      "definition": "exploitable weakness",
+      "notation": "3.77",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.8",
+      "label": "base measure",
+      "definition": "foundational metric",
+      "notation": "3.8",
+      "type": "term"
+    },
+    {
+      "id": "27000-3.9",
+      "label": "competence",
+      "definition": "skill application ability",
+      "notation": "3.9",
+      "type": "term"
+    }
+  ],
+  "metadata": {
+    "standard": "ISO 27000",
+    "description": "Scholarly interpretation",
+    "termCount": 77
+  }
+}

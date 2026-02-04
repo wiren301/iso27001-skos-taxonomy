@@ -1,0 +1,105 @@
+.graph-svg {
+  background: var(--bg-primary);
+  cursor: grab;
+}
+
+.graph-svg:active {
+  cursor: grabbing;
+}
+
+/* Links - matching original styles */
+.link {
+  stroke-opacity: 0.3;
+  stroke-width: 1px;
+  transition: all 0.2s ease;
+}
+
+.link.narrower {
+  stroke: var(--border-color);
+  stroke-opacity: 0.4;
+}
+
+.link.related {
+  stroke: var(--text-secondary);
+  stroke-opacity: 0.3;
+}
+
+.link.exactMatch {
+  stroke: var(--accent-blue);
+  stroke-width: 1.5px;
+  stroke-opacity: 0.7;
+}
+
+.link.references {
+  stroke: var(--accent-purple);
+  stroke-dasharray: 4,2;
+  stroke-width: 2px;
+  stroke-opacity: 0.8;
+}
+
+.link.usesTerm {
+  stroke: var(--text-secondary);
+  stroke-opacity: 0.4;
+  stroke-dasharray: 2,2;
+  stroke-width: 1px;
+}
+
+/* Nodes */
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  stroke: var(--border-color);
+  stroke-width: 1.5;
+  transition: stroke-width 0.15s, stroke 0.15s;
+}
+
+.node:hover circle {
+  stroke: var(--accent-blue);
+  stroke-width: 2.5;
+}
+
+.node.selected circle {
+  stroke: var(--accent-orange);
+  stroke-width: 4;
+  filter: drop-shadow(0 0 8px var(--accent-orange));
+}
+
+.node circle.top-concept {
+  stroke: var(--accent-green);
+  stroke-width: 2;
+}
+
+.node-label {
+  fill: var(--text-secondary);
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+
+.node:hover .node-label,
+.node.selected .node-label {
+  fill: var(--text-primary);
+}
+
+/* Filter highlighting */
+.node.dimmed circle {
+  opacity: 0.2;
+}
+
+.node.dimmed .node-label {
+  opacity: 0.2;
+}
+
+.node.highlighted circle {
+  stroke: var(--accent-blue);
+  stroke-width: 3;
+  filter: drop-shadow(0 0 6px var(--accent-blue));
+}
+
+.node.highlighted .node-label {
+  fill: var(--text-primary);
+  font-weight: 600;
+}

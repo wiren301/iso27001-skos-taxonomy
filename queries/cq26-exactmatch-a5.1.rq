@@ -1,0 +1,12 @@
+# CQ26: Which ISO 27002 control matches A.5.1?
+# Category F: Cross-Standard Tracing
+# Expected: 27002:5.1
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?matchNotation ?matchLabel
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27001/control/A.5.1> skos:exactMatch ?match .
+  ?match skos:notation ?matchNotation ;
+         skos:prefLabel ?matchLabel .
+}

@@ -1,0 +1,76 @@
+/* docs-app/src/components/PageHelp/PageHelp.css */
+.page-help {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  max-width: 600px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.page-help.collapsed {
+  max-width: fit-content;
+  right: auto;
+}
+
+.page-help-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+
+.page-help-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.page-help-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.page-help-toggle {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.page-help-toggle:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+.page-help-content {
+  padding: 0 14px 12px;
+}
+
+.page-help-description {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.page-help-hints {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}

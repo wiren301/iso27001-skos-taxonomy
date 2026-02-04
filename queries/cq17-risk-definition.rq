@@ -1,0 +1,11 @@
+# CQ17: What is the definition of "risk"?
+# Category D: Vocabulary Understanding
+# Expected: ISO 27000 definition of risk (term 3.61)
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?label ?definition
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.61> skos:prefLabel ?label ;
+                     skos:definition ?definition .
+}

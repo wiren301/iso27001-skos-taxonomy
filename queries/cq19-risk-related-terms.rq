@@ -1,0 +1,13 @@
+# CQ19: What terms relate to "risk"?
+# Category D: Vocabulary Understanding
+# Expected: Related vocabulary terms
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?relatedNotation ?relatedLabel
+WHERE {
+  <https://wiren301.github.io/iso27001-skos-taxonomy/27000/term/3.61> skos:related ?related .
+  ?related skos:notation ?relatedNotation ;
+           skos:prefLabel ?relatedLabel .
+}
+ORDER BY ?relatedNotation
