@@ -184,6 +184,7 @@
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 6px;
+  padding: 16px;
   overflow: hidden;
   transition: border-color 0.15s;
 }
@@ -241,7 +242,7 @@
 
 /* Control Details */
 .control-details {
-  padding: 16px;
+  padding: 20px 24px;
   background: var(--bg-primary);
 }
 
@@ -316,9 +317,9 @@
 
 /* Guidance */
 .guidance-section {
-  margin-top: 16px;
+  margin: 16px -24px 0;
+  padding: 12px 24px 0;
   border-top: 1px solid var(--border-color);
-  padding-top: 12px;
 }
 
 .guidance-section summary {
@@ -337,6 +338,9 @@
   color: var(--text-secondary);
   line-height: 1.6;
   margin-top: 12px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
   white-space: pre-wrap;
 }
 

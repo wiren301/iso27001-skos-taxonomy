@@ -422,9 +422,9 @@
 
 /* Guidance (collapsible) */
 .control-guidance {
-  margin-top: 12px;
+  margin: 12px -12px 0;
+  padding: 12px 12px 0;
   border-top: 1px solid var(--border-color);
-  padding-top: 12px;
 }
 
 .control-guidance summary {
