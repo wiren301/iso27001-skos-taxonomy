@@ -1,6 +1,7 @@
 # ISO 27001 SKOS Taxonomy
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![W3C PID](https://img.shields.io/badge/W3ID-wiren301--iso27001--skos-blue.svg)](http://w3id.org/wiren301-iso27001-skos)
 
 Building a Machine-Readable SKOS Taxonomy of ISO/IEC 27001:2022 and related information security standards.
 
